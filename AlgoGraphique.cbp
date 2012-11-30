@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="AlgoGraphique" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/AlgoGraphique" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/AlgoGraphique" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="`wx-config --cflags` -I." />
+		</Compiler>
+		<Linker>
+			<Add option="`wx-config --libs`" />
+		</Linker>
+		<Unit filename="App.cpp" />
+		<Unit filename="App.h" />
+		<Unit filename="Array.h" />
+		<Unit filename="AssertException.cpp" />
+		<Unit filename="AssertException.h" />
+		<Unit filename="Buffer.cpp" />
+		<Unit filename="Buffer.h" />
+		<Unit filename="Camera.cpp" />
+		<Unit filename="Camera.h" />
+		<Unit filename="Color.h" />
+		<Unit filename="Coord2D.h" />
+		<Unit filename="Coord3D.h" />
+		<Unit filename="DataComprime.cpp" />
+		<Unit filename="DataDuck.cpp" />
+		<Unit filename="DataEtoile.cpp" />
+		<Unit filename="DataNoeud.cpp" />
+		<Unit filename="DataSphere.cpp" />
+		<Unit filename="DataTeapot.cpp" />
+		<Unit filename="DataTore.cpp" />
+		<Unit filename="Drawable.cpp" />
+		<Unit filename="Drawable.h" />
+		<Unit filename="DrawableInCameraCoordinates.cpp" />
+		<Unit filename="DrawableInCameraCoordinates.h" />
+		<Unit filename="Engine.cpp" />
+		<Unit filename="Engine.h" />
+		<Unit filename="Exception.cpp" />
+		<Unit filename="Exception.h" />
+		<Unit filename="Face.h" />
+		<Unit filename="FaceDepthAccessor.cpp" />
+		<Unit filename="FaceDepthAccessor.h" />
+		<Unit filename="FastMath.cpp" />
+		<Unit filename="FastMath.h" />
+		<Unit filename="FrameCounter.cpp" />
+		<Unit filename="FrameCounter.h" />
+		<Unit filename="IllegalArgumentException.cpp" />
+		<Unit filename="IllegalArgumentException.h" />
+		<Unit filename="IndexOutOfBoundsException.cpp" />
+		<Unit filename="IndexOutOfBoundsException.h" />
+		<Unit filename="Light.h" />
+		<Unit filename="MainFrame.cpp" />
+		<Unit filename="MainFrame.h" />
+		<Unit filename="Memory.cpp" />
+		<Unit filename="Memory.h" />
+		<Unit filename="MemoryException.cpp" />
+		<Unit filename="MemoryException.h" />
+		<Unit filename="Panel3D.cpp" />
+		<Unit filename="Panel3D.h" />
+		<Unit filename="Piloter.cpp" />
+		<Unit filename="Piloter.h" />
+		<Unit filename="QuickSort.h" />
+		<Unit filename="Renderable.cpp" />
+		<Unit filename="Renderable.h" />
+		<Unit filename="Renderer.cpp" />
+		<Unit filename="Renderer.h" />
+		<Unit filename="Rotation.h" />
+		<Unit filename="ScanLineComputer.cpp" />
+		<Unit filename="ScanLineComputer.h" />
+		<Unit filename="ZBuffer.cpp" />
+		<Unit filename="ZBuffer.h" />
+		<Unit filename="wxid.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
