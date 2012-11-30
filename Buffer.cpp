@@ -62,6 +62,7 @@ void Buffer::DrawLine(const Coord2D p1, const Coord2D p2, const Color c1,
 	int const1, const2;
 	int incX, incY;
 	int compteur;
+	double distance = p1.Distance(p2);
 
 	x = p1.x;
 	y = p1.y;
@@ -104,8 +105,16 @@ void Buffer::DrawLine(const Coord2D p1, const Coord2D p2, const Color c1,
 	    for(compteur = 1; compteur <= longX; compteur++)
 	    {
 	        Coord2D coord(x, y);
-	        SetPoint(coord, c1);
 
+            // Calcul de la distance est des poids
+	        double distCourante = p1.Distance(coord);
+	        double w1 = 1.0 - (distCourante / distance);
+	        double w2 = 1.0 - w1;
+
+            // Dessin
+	        SetPoint(coord, c1*w1 + c2*w2);
+
+            // Incrémentation des coordonnées pour le prochain passage
 	        if(critere > 0)
 	        {
 	            y +=incY;
@@ -129,8 +138,16 @@ void Buffer::DrawLine(const Coord2D p1, const Coord2D p2, const Color c1,
 	    for(compteur = 1; compteur <= longY; compteur++)
 	    {
 	        Coord2D coord(x, y);
-	        SetPoint(coord, c1);
 
+	        // Calcul de la distance est des poids
+	        double distCourante = p1.Distance(coord);
+	        double w1 = 1.0 - (distCourante / distance);
+	        double w2 = 1.0 - w1;
+
+            // Dessin
+	        SetPoint(coord, c1*w1 + c2*w2);
+
+            // Incrémentation des coordonnées pour le prochain passage
 	        if(critere > 0)
 	        {
 	            x += incX;
