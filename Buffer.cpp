@@ -52,6 +52,8 @@ bool Buffer::SaveToFile(const wxString& name) const
 	return data.SaveFile(name);
 }
 
+
+//Doit afficher une croix
 void Buffer::DrawLine(const Coord2D p1, const Coord2D p2, const Color c1,
 		const Color c2)
 {
@@ -161,13 +163,27 @@ void Buffer::DrawLine(const Coord2D p1, const Coord2D p2, const Color c1,
 	        y += incY;
 	    }
 	}
-
 }
 
 void Buffer::DrawFilledTriangle(const Coord2D p1, const Coord2D p2,
 		const Coord2D p3, const Color c1, const Color c2, const Color c3)
 {
-	// completer ici
+    int minX = FastMath::min<int>( p1.x, p2.x );
+    minX = FastMath::min<int>( p3.x, minX );
+
+    int maxX = FastMath::max<int>( p1.x, p2.x );
+    maxX = FastMath::max<int>( p3.x, maxX );
+
+    int minY = FastMath::min<int>( p1.y, p2.y );
+    minY = FastMath::min<int>( p3.y, minY );
+
+    int maxY = FastMath::max<int>( p1.y, p2.y );
+    maxY = FastMath::max<int>( p3.y, maxY );
+
+    for( int i = minX; i < maxX; ++i )
+        for( int j = minY; j < maxY; ++j )
+            if( isInside( p1, p2, p3, Coord2D(i,j) ) )
+                SetPoint( Coord2D(i,j), c1 );
 }
 
 void Buffer::DrawPhongTriangle(const Coord2D p1, const Coord2D p2,
@@ -177,5 +193,15 @@ void Buffer::DrawPhongTriangle(const Coord2D p1, const Coord2D p2,
 		const AmbientLight & ambientLight, const PointLight & pointLight)
 {
 	// compléter ici
+}
+
+bool Buffer::isInside( Coord2D a, Coord2D b, Coord2D c, Coord2D point )
+{
+    return ( isRight( a,b, point ) && isRight( b,c, point ) && isRight( c,a , point ) );
+}
+
+bool Buffer::isRight( Coord2D a, Coord2D b, Coord2D point )
+{
+    return ( (b.x - a.x) * ( point.y - a.y ) - ( point.x - a.x ) * ( b.y - a.y ) ) > 0;
 }
 

@@ -1,12 +1,20 @@
 # depslib dependency file v1.0
+<<<<<<< HEAD
+1353966816 source:/home/jt117/Documents/AlgoGraphique/AlgoGraphique/App.cpp
+=======
 1353064166 source:/home/albin/Developments/AlgoGraphique/App.cpp
+>>>>>>> 76b71e11f5a2d4135ad7c5dc295a6757d69c20b9
 	<App.h>
 	<MainFrame.h>
 	<wx/image.h>
 	<locale.h>
 	<Drawable.h>
 
+<<<<<<< HEAD
+1329067346 /usr/include/wx-2.8/wx/image.h
+=======
 1330468755 /usr/include/wx-2.8/wx/image.h
+>>>>>>> 76b71e11f5a2d4135ad7c5dc295a6757d69c20b9
 	"wx/defs.h"
 	"wx/object.h"
 	"wx/string.h"
@@ -25,7 +33,11 @@
 	"wx/imagxpm.h"
 	"wx/imagiff.h"
 
+<<<<<<< HEAD
+1329067344 /usr/include/wx-2.8/wx/defs.h
+=======
 1330468754 /usr/include/wx-2.8/wx/defs.h
+>>>>>>> 76b71e11f5a2d4135ad7c5dc295a6757d69c20b9
 	"wx/platform.h"
 	"wx/features.h"
 	"wx/version.h"
@@ -36,7 +48,11 @@
 	<unistd.h>
 	"wx/msw/winundef.h"
 
+<<<<<<< HEAD
+1329067344 /usr/include/wx-2.8/wx/platform.h
+=======
 1330468754 /usr/include/wx-2.8/wx/platform.h
+>>>>>>> 76b71e11f5a2d4135ad7c5dc295a6757d69c20b9
 	<stddef.h>
 	<AvailabilityMacros.h>
 	<unistd.h>
@@ -48,9 +64,15 @@
 	"wx/msw/gccpriv.h"
 	<AvailabilityMacros.h>
 
+<<<<<<< HEAD
+1329067344 /usr/lib/x86_64-linux-gnu/wx/include/gtk2-unicode-release-2.8/wx/setup.h
+
+1329067344 /usr/include/wx-2.8/wx/chkconf.h
+=======
 1330468754 /usr/lib64/wx/include/gtk2-unicode-release-2.8/wx/setup.h
 
 1330468754 /usr/include/wx-2.8/wx/chkconf.h
+>>>>>>> 76b71e11f5a2d4135ad7c5dc295a6757d69c20b9
 	"wx/palmos/chkconf.h"
 	"wx/msw/wince/chkconf.h"
 	"wx/msw/chkconf.h"
@@ -62,6 +84,18 @@
 	"wx/x11/chkconf.h"
 	"wx/univ/chkconf.h"
 
+<<<<<<< HEAD
+1329067344 /usr/include/wx-2.8/wx/features.h
+
+1329067345 /usr/include/wx-2.8/wx/version.h
+	"wx/cpp.h"
+
+1329067344 /usr/include/wx-2.8/wx/cpp.h
+
+1329067344 /usr/include/wx-2.8/wx/dlimpexp.h
+
+1329067344 /usr/include/wx-2.8/wx/debug.h
+=======
 1330468754 /usr/include/wx-2.8/wx/features.h
 
 1330468754 /usr/include/wx-2.8/wx/version.h
@@ -72,11 +106,16 @@
 1330468754 /usr/include/wx-2.8/wx/dlimpexp.h
 
 1330468754 /usr/include/wx-2.8/wx/debug.h
+>>>>>>> 76b71e11f5a2d4135ad7c5dc295a6757d69c20b9
 	<assert.h>
 	<limits.h>
 	"wx/wxchar.h"
 
+<<<<<<< HEAD
+1329067345 /usr/include/wx-2.8/wx/wxchar.h
+=======
 1330468754 /usr/include/wx-2.8/wx/wxchar.h
+>>>>>>> 76b71e11f5a2d4135ad7c5dc295a6757d69c20b9
 	"wx/platform.h"
 	"wx/dlimpexp.h"
 	<stdio.h>
@@ -106,18 +145,30 @@
 	<time.h>
 	<string.h>
 
+<<<<<<< HEAD
+1329067344 /usr/include/wx-2.8/wx/object.h
+=======
 1330468754 /usr/include/wx-2.8/wx/object.h
+>>>>>>> 76b71e11f5a2d4135ad7c5dc295a6757d69c20b9
 	"wx/memory.h"
 	"wx/xti.h"
 	"wx/msw/msvcrt.h"
 
+<<<<<<< HEAD
+1329067344 /usr/include/wx-2.8/wx/memory.h
+=======
 1330468754 /usr/include/wx-2.8/wx/memory.h
+>>>>>>> 76b71e11f5a2d4135ad7c5dc295a6757d69c20b9
 	"wx/defs.h"
 	"wx/string.h"
 	"wx/msgout.h"
 	<stddef.h>
 
+<<<<<<< HEAD
+1329067345 /usr/include/wx-2.8/wx/string.h
+=======
 1330468754 /usr/include/wx-2.8/wx/string.h
+>>>>>>> 76b71e11f5a2d4135ad7c5dc295a6757d69c20b9
 	"wx/defs.h"
 	<ctype.h>
 	<stdio.h>
@@ -140,11 +191,19 @@
 	"wx/arrstr.h"
 	"wx/iosfwrap.h"
 
+<<<<<<< HEAD
+1329067344 /usr/include/wx-2.8/wx/buffer.h
+	"wx/wxchar.h"
+	<stdlib.h>
+
+1329067345 /usr/include/wx-2.8/wx/strconv.h
+=======
 1330468754 /usr/include/wx-2.8/wx/buffer.h
 	"wx/wxchar.h"
 	<stdlib.h>
 
 1330468754 /usr/include/wx-2.8/wx/strconv.h
+>>>>>>> 76b71e11f5a2d4135ad7c5dc295a6757d69c20b9
 	"wx/defs.h"
 	"wx/wxchar.h"
 	"wx/buffer.h"
@@ -152,6 +211,16 @@
 	<stdlib.h>
 	"wx/fontenc.h"
 
+<<<<<<< HEAD
+1329067344 /usr/include/wx-2.8/wx/fontenc.h
+
+1329067344 /usr/include/wx-2.8/wx/beforestd.h
+
+1329067344 /usr/include/wx-2.8/wx/afterstd.h
+	"wx/msw/winundef.h"
+
+1329067344 /usr/include/wx-2.8/wx/arrstr.h
+=======
 1330468754 /usr/include/wx-2.8/wx/fontenc.h
 
 1330468754 /usr/include/wx-2.8/wx/beforestd.h
@@ -160,27 +229,44 @@
 	"wx/msw/winundef.h"
 
 1330468754 /usr/include/wx-2.8/wx/arrstr.h
+>>>>>>> 76b71e11f5a2d4135ad7c5dc295a6757d69c20b9
 	"wx/defs.h"
 	"wx/string.h"
 	"wx/dynarray.h"
 
+<<<<<<< HEAD
+1329067344 /usr/include/wx-2.8/wx/dynarray.h
+=======
 1330468754 /usr/include/wx-2.8/wx/dynarray.h
+>>>>>>> 76b71e11f5a2d4135ad7c5dc295a6757d69c20b9
 	"wx/defs.h"
 	"wx/beforestd.h"
 	<vector>
 	<algorithm>
 	"wx/afterstd.h"
 
+<<<<<<< HEAD
+1329067344 /usr/include/wx-2.8/wx/iosfwrap.h
+=======
 1330468754 /usr/include/wx-2.8/wx/iosfwrap.h
+>>>>>>> 76b71e11f5a2d4135ad7c5dc295a6757d69c20b9
 	<iostream.h>
 	<iosfwd>
 	"wx/msw/winundef.h"
 
+<<<<<<< HEAD
+1329067344 /usr/include/wx-2.8/wx/msgout.h
+	"wx/defs.h"
+	"wx/wxchar.h"
+
+1329067345 /usr/include/wx-2.8/wx/xti.h
+=======
 1330468754 /usr/include/wx-2.8/wx/msgout.h
 	"wx/defs.h"
 	"wx/wxchar.h"
 
 1330468754 /usr/include/wx-2.8/wx/xti.h
+>>>>>>> 76b71e11f5a2d4135ad7c5dc295a6757d69c20b9
 	"wx/defs.h"
 	"wx/memory.h"
 	"wx/flags.h"
@@ -192,7 +278,11 @@
 	<typeinfo>
 	"wx/dynarray.h"
 
+<<<<<<< HEAD
+1329067344 /usr/include/wx-2.8/wx/hashmap.h
+=======
 1330468754 /usr/include/wx-2.8/wx/hashmap.h
+>>>>>>> 76b71e11f5a2d4135ad7c5dc295a6757d69c20b9
 	"wx/string.h"
 	<unordered_map>
 	<tr1/unordered_map>
@@ -200,7 +290,11 @@
 	<hash_map>
 	<stddef.h>
 
+<<<<<<< HEAD
+1329067344 /usr/include/wx-2.8/wx/log.h
+=======
 1330468754 /usr/include/wx-2.8/wx/log.h
+>>>>>>> 76b71e11f5a2d4135ad7c5dc295a6757d69c20b9
 	"wx/defs.h"
 	"wx/string.h"
 	"wx/arrstr.h"
@@ -210,14 +304,24 @@
 	"wx/generic/logg.h"
 	"wx/cocoa/log.h"
 
+<<<<<<< HEAD
+1329067345 /usr/include/wx-2.8/wx/generic/logg.h
+
+1329067344 /usr/include/wx-2.8/wx/intl.h
+=======
 1330468755 /usr/include/wx-2.8/wx/generic/logg.h
 
 1330468754 /usr/include/wx-2.8/wx/intl.h
+>>>>>>> 76b71e11f5a2d4135ad7c5dc295a6757d69c20b9
 	"wx/defs.h"
 	"wx/string.h"
 	"wx/fontenc.h"
 
+<<<<<<< HEAD
+1329067345 /usr/include/wx-2.8/wx/gdicmn.h
+=======
 1330468755 /usr/include/wx-2.8/wx/gdicmn.h
+>>>>>>> 76b71e11f5a2d4135ad7c5dc295a6757d69c20b9
 	"wx/defs.h"
 	"wx/list.h"
 	"wx/string.h"
@@ -225,7 +329,11 @@
 	"wx/hashmap.h"
 	"wx/math.h"
 
+<<<<<<< HEAD
+1329067344 /usr/include/wx-2.8/wx/list.h
+=======
 1330468754 /usr/include/wx-2.8/wx/list.h
+>>>>>>> 76b71e11f5a2d4135ad7c5dc295a6757d69c20b9
 	"wx/defs.h"
 	"wx/object.h"
 	"wx/string.h"
@@ -235,19 +343,31 @@
 	<list>
 	"wx/afterstd.h"
 
+<<<<<<< HEAD
+1329067344 /usr/include/wx-2.8/wx/math.h
+=======
 1330468754 /usr/include/wx-2.8/wx/math.h
+>>>>>>> 76b71e11f5a2d4135ad7c5dc295a6757d69c20b9
 	"wx/defs.h"
 	<math.h>
 	<float.h>
 
+<<<<<<< HEAD
+1329067345 /usr/include/wx-2.8/wx/stream.h
+=======
 1330468754 /usr/include/wx-2.8/wx/stream.h
+>>>>>>> 76b71e11f5a2d4135ad7c5dc295a6757d69c20b9
 	"wx/defs.h"
 	<stdio.h>
 	"wx/object.h"
 	"wx/string.h"
 	"wx/filefn.h"
 
+<<<<<<< HEAD
+1329067344 /usr/include/wx-2.8/wx/filefn.h
+=======
 1330468754 /usr/include/wx-2.8/wx/filefn.h
+>>>>>>> 76b71e11f5a2d4135ad7c5dc295a6757d69c20b9
 	"wx/list.h"
 	"wx/arrstr.h"
 	"wx/msw/wince/time.h"
@@ -283,7 +403,11 @@
 	<fcntl.h>
 	<sys/types.h>
 
+<<<<<<< HEAD
+1329067345 /usr/include/wx-2.8/wx/variant.h
+=======
 1330468754 /usr/include/wx-2.8/wx/variant.h
+>>>>>>> 76b71e11f5a2d4135ad7c5dc295a6757d69c20b9
 	"wx/defs.h"
 	"wx/object.h"
 	"wx/string.h"
@@ -294,7 +418,11 @@
 	"wx/db.h"
 	"wx/iosfwrap.h"
 
+<<<<<<< HEAD
+1329067344 /usr/include/wx-2.8/wx/datetime.h
+=======
 1330468754 /usr/include/wx-2.8/wx/datetime.h
+>>>>>>> 76b71e11f5a2d4135ad7c5dc295a6757d69c20b9
 	"wx/defs.h"
 	<time.h>
 	"wx/msw/wince/time.h"
@@ -302,13 +430,21 @@
 	"wx/longlong.h"
 	"wx/dynarray.h"
 
+<<<<<<< HEAD
+1329067344 /usr/include/wx-2.8/wx/longlong.h
+=======
 1330468754 /usr/include/wx-2.8/wx/longlong.h
+>>>>>>> 76b71e11f5a2d4135ad7c5dc295a6757d69c20b9
 	"wx/defs.h"
 	"wx/string.h"
 	<limits.h>
 	"wx/iosfwrap.h"
 
+<<<<<<< HEAD
+1329067345 /usr/include/wx-2.8/wx/db.h
+=======
 1330468755 /usr/include/wx-2.8/wx/db.h
+>>>>>>> 76b71e11f5a2d4135ad7c5dc295a6757d69c20b9
 	"wx/defs.h"
 	"wx/string.h"
 	<afxwin.h>
@@ -325,6 +461,79 @@
 	<sqlext.h>
 	"wx/object.h"
 
+<<<<<<< HEAD
+1329067344 /usr/include/wx-2.8/wx/isql.h
+
+1329067344 /usr/include/wx-2.8/wx/isqlext.h
+	"wx/isql.h"
+
+1329067346 /usr/include/wx-2.8/wx/imagbmp.h
+	"wx/image.h"
+
+1329067346 /usr/include/wx-2.8/wx/imagpng.h
+	"wx/defs.h"
+	"wx/image.h"
+
+1329067346 /usr/include/wx-2.8/wx/imaggif.h
+	"wx/image.h"
+
+1329067346 /usr/include/wx-2.8/wx/imagpcx.h
+	"wx/image.h"
+
+1329067346 /usr/include/wx-2.8/wx/imagjpeg.h
+	"wx/defs.h"
+	"wx/image.h"
+
+1329067346 /usr/include/wx-2.8/wx/imagtga.h
+	"wx/image.h"
+
+1329067346 /usr/include/wx-2.8/wx/imagtiff.h
+	"wx/defs.h"
+	"wx/image.h"
+
+1329067346 /usr/include/wx-2.8/wx/imagpnm.h
+	"wx/image.h"
+
+1329067346 /usr/include/wx-2.8/wx/imagxpm.h
+	"wx/image.h"
+
+1329067346 /usr/include/wx-2.8/wx/imagiff.h
+	"wx/image.h"
+
+1353064166 source:/home/jt117/Documents/AlgoGraphique/AlgoGraphique/AssertException.cpp
+	<AssertException.h>
+
+1353064166 source:/home/jt117/Documents/AlgoGraphique/AlgoGraphique/Camera.cpp
+	<Camera.h>
+	<FastMath.h>
+
+1353064166 source:/home/jt117/Documents/AlgoGraphique/AlgoGraphique/DataComprime.cpp
+	<Drawable.h>
+
+1353064166 source:/home/jt117/Documents/AlgoGraphique/AlgoGraphique/DataDuck.cpp
+	<Drawable.h>
+
+1353064166 source:/home/jt117/Documents/AlgoGraphique/AlgoGraphique/DataEtoile.cpp
+	<Drawable.h>
+
+1353064166 source:/home/jt117/Documents/AlgoGraphique/AlgoGraphique/DataNoeud.cpp
+	<Drawable.h>
+
+1353064166 source:/home/jt117/Documents/AlgoGraphique/AlgoGraphique/DataSphere.cpp
+	<Drawable.h>
+
+1353064166 source:/home/jt117/Documents/AlgoGraphique/AlgoGraphique/DataTeapot.cpp
+	<Drawable.h>
+
+1353064166 source:/home/jt117/Documents/AlgoGraphique/AlgoGraphique/DataTore.cpp
+	<Drawable.h>
+
+1353064166 source:/home/jt117/Documents/AlgoGraphique/AlgoGraphique/Drawable.cpp
+	<Drawable.h>
+	<FastMath.h>
+
+1353064166 source:/home/jt117/Documents/AlgoGraphique/AlgoGraphique/DrawableInCameraCoordinates.cpp
+=======
 1330468754 /usr/include/wx-2.8/wx/isql.h
 
 1330468754 /usr/include/wx-2.8/wx/isqlext.h
@@ -396,15 +605,38 @@
 	<FastMath.h>
 
 1353064166 source:/home/albin/Developments/AlgoGraphique/DrawableInCameraCoordinates.cpp
+>>>>>>> 76b71e11f5a2d4135ad7c5dc295a6757d69c20b9
 	<DrawableInCameraCoordinates.h>
 	<FastMath.h>
 	<QuickSort.h>
 
+<<<<<<< HEAD
+1353064166 source:/home/jt117/Documents/AlgoGraphique/AlgoGraphique/Engine.cpp
+=======
 1353064166 source:/home/albin/Developments/AlgoGraphique/Engine.cpp
+>>>>>>> 76b71e11f5a2d4135ad7c5dc295a6757d69c20b9
 	<Engine.h>
 	<Panel3D.h>
 	<Piloter.h>
 
+<<<<<<< HEAD
+1353064166 source:/home/jt117/Documents/AlgoGraphique/AlgoGraphique/Exception.cpp
+	<Exception.h>
+	<signal.h>
+
+1353064166 source:/home/jt117/Documents/AlgoGraphique/AlgoGraphique/FaceDepthAccessor.cpp
+	<FaceDepthAccessor.h>
+	<DrawableInCameraCoordinates.h>
+
+1353064166 source:/home/jt117/Documents/AlgoGraphique/AlgoGraphique/FastMath.cpp
+	<FastMath.h>
+
+1353064166 source:/home/jt117/Documents/AlgoGraphique/AlgoGraphique/FrameCounter.cpp
+	<FrameCounter.h>
+	<wx/wx.h>
+
+1329067345 /usr/include/wx-2.8/wx/wx.h
+=======
 1353064166 source:/home/albin/Developments/AlgoGraphique/Exception.cpp
 	<Exception.h>
 	<signal.h>
@@ -421,6 +653,7 @@
 	<wx/wx.h>
 
 1330468754 /usr/include/wx-2.8/wx/wx.h
+>>>>>>> 76b71e11f5a2d4135ad7c5dc295a6757d69c20b9
 	"wx/defs.h"
 	"wx/object.h"
 	"wx/dynarray.h"
@@ -500,13 +733,21 @@
 	"wx/validate.h"
 	"wx/valtext.h"
 
+<<<<<<< HEAD
+1329067344 /usr/include/wx-2.8/wx/hash.h
+=======
 1330468754 /usr/include/wx-2.8/wx/hash.h
+>>>>>>> 76b71e11f5a2d4135ad7c5dc295a6757d69c20b9
 	"wx/defs.h"
 	"wx/object.h"
 	"wx/list.h"
 	"wx/dynarray.h"
 
+<<<<<<< HEAD
+1329067344 /usr/include/wx-2.8/wx/event.h
+=======
 1330468754 /usr/include/wx-2.8/wx/event.h
+>>>>>>> 76b71e11f5a2d4135ad7c5dc295a6757d69c20b9
 	"wx/defs.h"
 	"wx/cpp.h"
 	"wx/object.h"
@@ -516,16 +757,27 @@
 	"wx/thread.h"
 	"wx/dynarray.h"
 
+<<<<<<< HEAD
+1329067344 /usr/include/wx-2.8/wx/clntdata.h
+=======
 1330468754 /usr/include/wx-2.8/wx/clntdata.h
+>>>>>>> 76b71e11f5a2d4135ad7c5dc295a6757d69c20b9
 	"wx/defs.h"
 	"wx/string.h"
 	"wx/hashmap.h"
 	"wx/vector.h"
 
+<<<<<<< HEAD
+1329067345 /usr/include/wx-2.8/wx/vector.h
+	"wx/defs.h"
+
+1329067345 /usr/include/wx-2.8/wx/cursor.h
+=======
 1330468754 /usr/include/wx-2.8/wx/vector.h
 	"wx/defs.h"
 
 1330468755 /usr/include/wx-2.8/wx/cursor.h
+>>>>>>> 76b71e11f5a2d4135ad7c5dc295a6757d69c20b9
 	"wx/defs.h"
 	"wx/palmos/cursor.h"
 	"wx/msw/cursor.h"
@@ -540,10 +792,17 @@
 	"wx/os2/cursor.h"
 	"wx/utils.h"
 
+<<<<<<< HEAD
+1329067346 /usr/include/wx-2.8/wx/gtk/cursor.h
+	"wx/object.h"
+
+1329067345 /usr/include/wx-2.8/wx/utils.h
+=======
 1330468755 /usr/include/wx-2.8/wx/gtk/cursor.h
 	"wx/object.h"
 
 1330468754 /usr/include/wx-2.8/wx/utils.h
+>>>>>>> 76b71e11f5a2d4135ad7c5dc295a6757d69c20b9
 	"wx/object.h"
 	"wx/list.h"
 	"wx/filefn.h"
@@ -555,6 +814,15 @@
 	<unistd.h>
 	<stdio.h>
 
+<<<<<<< HEAD
+1329067344 /usr/include/wx-2.8/wx/platinfo.h
+	"wx/string.h"
+
+1329067345 /usr/include/wx-2.8/wx/thread.h
+	"wx/defs.h"
+
+1329067344 /usr/include/wx-2.8/wx/app.h
+=======
 1330468754 /usr/include/wx-2.8/wx/platinfo.h
 	"wx/string.h"
 
@@ -562,6 +830,7 @@
 	"wx/defs.h"
 
 1330468754 /usr/include/wx-2.8/wx/app.h
+>>>>>>> 76b71e11f5a2d4135ad7c5dc295a6757d69c20b9
 	"wx/event.h"
 	"wx/build.h"
 	"wx/init.h"
@@ -579,6 +848,22 @@
 	"wx/os2/app.h"
 	"wx/univ/theme.h"
 
+<<<<<<< HEAD
+1329067344 /usr/include/wx-2.8/wx/build.h
+	"wx/version.h"
+
+1329067344 /usr/include/wx-2.8/wx/init.h
+	"wx/defs.h"
+	"wx/wxchar.h"
+
+1329067346 /usr/include/wx-2.8/wx/gtk/app.h
+
+1329067345 /usr/include/wx-2.8/wx/stopwatch.h
+	"wx/defs.h"
+	"wx/longlong.h"
+
+1329067344 /usr/include/wx-2.8/wx/module.h
+=======
 1330468754 /usr/include/wx-2.8/wx/build.h
 	"wx/version.h"
 
@@ -593,11 +878,16 @@
 	"wx/longlong.h"
 
 1330468754 /usr/include/wx-2.8/wx/module.h
+>>>>>>> 76b71e11f5a2d4135ad7c5dc295a6757d69c20b9
 	"wx/object.h"
 	"wx/list.h"
 	"wx/dynarray.h"
 
+<<<<<<< HEAD
+1329067346 /usr/include/wx-2.8/wx/window.h
+=======
 1330468755 /usr/include/wx-2.8/wx/window.h
+>>>>>>> 76b71e11f5a2d4135ad7c5dc295a6757d69c20b9
 	"wx/event.h"
 	"wx/list.h"
 	"wx/cursor.h"
@@ -623,7 +913,11 @@
 	"wx/os2/window.h"
 	"wx/univ/window.h"
 
+<<<<<<< HEAD
+1329067346 /usr/include/wx-2.8/wx/font.h
+=======
 1330468755 /usr/include/wx-2.8/wx/font.h
+>>>>>>> 76b71e11f5a2d4135ad7c5dc295a6757d69c20b9
 	"wx/defs.h"
 	"wx/fontenc.h"
 	"wx/gdiobj.h"
@@ -639,12 +933,21 @@
 	"wx/cocoa/font.h"
 	"wx/os2/font.h"
 
+<<<<<<< HEAD
+1329067346 /usr/include/wx-2.8/wx/gdiobj.h
+	"wx/object.h"
+
+1329067346 /usr/include/wx-2.8/wx/gtk/font.h
+
+1329067346 /usr/include/wx-2.8/wx/colour.h
+=======
 1330468755 /usr/include/wx-2.8/wx/gdiobj.h
 	"wx/object.h"
 
 1330468755 /usr/include/wx-2.8/wx/gtk/font.h
 
 1330468755 /usr/include/wx-2.8/wx/colour.h
+>>>>>>> 76b71e11f5a2d4135ad7c5dc295a6757d69c20b9
 	"wx/defs.h"
 	"wx/gdiobj.h"
 	"wx/variant.h"
@@ -660,9 +963,15 @@
 	"wx/cocoa/colour.h"
 	"wx/os2/colour.h"
 
+<<<<<<< HEAD
+1329067346 /usr/include/wx-2.8/wx/gtk/colour.h
+
+1329067346 /usr/include/wx-2.8/wx/region.h
+=======
 1330468755 /usr/include/wx-2.8/wx/gtk/colour.h
 
 1330468755 /usr/include/wx-2.8/wx/region.h
+>>>>>>> 76b71e11f5a2d4135ad7c5dc295a6757d69c20b9
 	"wx/gdiobj.h"
 	"wx/gdicmn.h"
 	"wx/palmos/region.h"
@@ -676,6 +985,15 @@
 	"wx/cocoa/region.h"
 	"wx/os2/region.h"
 
+<<<<<<< HEAD
+1329067346 /usr/include/wx-2.8/wx/gtk/region.h
+
+1329067346 /usr/include/wx-2.8/wx/validate.h
+	"wx/defs.h"
+	"wx/event.h"
+
+1329067345 /usr/include/wx-2.8/wx/palette.h
+=======
 1330468755 /usr/include/wx-2.8/wx/gtk/region.h
 
 1330468755 /usr/include/wx-2.8/wx/validate.h
@@ -683,6 +1001,7 @@
 	"wx/event.h"
 
 1330468755 /usr/include/wx-2.8/wx/palette.h
+>>>>>>> 76b71e11f5a2d4135ad7c5dc295a6757d69c20b9
 	"wx/defs.h"
 	"wx/object.h"
 	"wx/gdiobj.h"
@@ -695,13 +1014,21 @@
 	"wx/mac/palette.h"
 	"wx/os2/palette.h"
 
+<<<<<<< HEAD
+1329067346 /usr/include/wx-2.8/wx/generic/paletteg.h
+=======
 1330468755 /usr/include/wx-2.8/wx/generic/paletteg.h
+>>>>>>> 76b71e11f5a2d4135ad7c5dc295a6757d69c20b9
 	"wx/defs.h"
 	"wx/object.h"
 	"wx/gdiobj.h"
 	"wx/gdicmn.h"
 
+<<<<<<< HEAD
+1329067346 /usr/include/wx-2.8/wx/accel.h
+=======
 1330468755 /usr/include/wx-2.8/wx/accel.h
+>>>>>>> 76b71e11f5a2d4135ad7c5dc295a6757d69c20b9
 	"wx/defs.h"
 	"wx/object.h"
 	"wx/generic/accel.h"
@@ -713,16 +1040,40 @@
 	"wx/generic/accel.h"
 	"wx/os2/accel.h"
 
+<<<<<<< HEAD
+1329067345 /usr/include/wx-2.8/wx/generic/accel.h
+
+1329067347 /usr/include/wx-2.8/wx/gtk/accel.h
+	"wx/generic/accel.h"
+
+1329067346 /usr/include/wx-2.8/wx/access.h
+=======
 1330468755 /usr/include/wx-2.8/wx/generic/accel.h
 
 1330468755 /usr/include/wx-2.8/wx/gtk/accel.h
 	"wx/generic/accel.h"
 
 1330468755 /usr/include/wx-2.8/wx/access.h
+>>>>>>> 76b71e11f5a2d4135ad7c5dc295a6757d69c20b9
 	"wx/defs.h"
 	"wx/variant.h"
 	"wx/msw/ole/access.h"
 
+<<<<<<< HEAD
+1329067346 /usr/include/wx-2.8/wx/gtk/window.h
+	"wx/dynarray.h"
+
+1329067344 /usr/include/wx-2.8/wx/containr.h
+
+1329067345 /usr/include/wx-2.8/wx/panel.h
+	"wx/generic/panelg.h"
+
+1329067345 /usr/include/wx-2.8/wx/generic/panelg.h
+	"wx/window.h"
+	"wx/containr.h"
+
+1329067346 /usr/include/wx-2.8/wx/toplevel.h
+=======
 1330468755 /usr/include/wx-2.8/wx/gtk/window.h
 	"wx/dynarray.h"
 
@@ -736,6 +1087,7 @@
 	"wx/containr.h"
 
 1330468755 /usr/include/wx-2.8/wx/toplevel.h
+>>>>>>> 76b71e11f5a2d4135ad7c5dc295a6757d69c20b9
 	"wx/window.h"
 	"wx/iconbndl.h"
 	"wx/palmos/toplevel.h"
@@ -751,6 +1103,15 @@
 	"wx/motif/toplevel.h"
 	"wx/univ/toplevel.h"
 
+<<<<<<< HEAD
+1329067346 /usr/include/wx-2.8/wx/iconbndl.h
+	"wx/dynarray.h"
+	"wx/gdicmn.h"
+
+1329067346 /usr/include/wx-2.8/wx/gtk/toplevel.h
+
+1329067345 /usr/include/wx-2.8/wx/frame.h
+=======
 1330468755 /usr/include/wx-2.8/wx/iconbndl.h
 	"wx/dynarray.h"
 	"wx/gdicmn.h"
@@ -758,6 +1119,7 @@
 1330468755 /usr/include/wx-2.8/wx/gtk/toplevel.h
 
 1330468755 /usr/include/wx-2.8/wx/frame.h
+>>>>>>> 76b71e11f5a2d4135ad7c5dc295a6757d69c20b9
 	"wx/toplevel.h"
 	"wx/univ/frame.h"
 	"wx/palmos/frame.h"
@@ -769,9 +1131,15 @@
 	"wx/cocoa/frame.h"
 	"wx/os2/frame.h"
 
+<<<<<<< HEAD
+1329067347 /usr/include/wx-2.8/wx/gtk/frame.h
+
+1329067346 /usr/include/wx-2.8/wx/bitmap.h
+=======
 1330468755 /usr/include/wx-2.8/wx/gtk/frame.h
 
 1330468755 /usr/include/wx-2.8/wx/bitmap.h
+>>>>>>> 76b71e11f5a2d4135ad7c5dc295a6757d69c20b9
 	"wx/string.h"
 	"wx/gdicmn.h"
 	"wx/colour.h"
@@ -789,9 +1157,15 @@
 	"wx/os2/bitmap.h"
 	"wx/generic/mask.h"
 
+<<<<<<< HEAD
+1329067346 /usr/include/wx-2.8/wx/gtk/bitmap.h
+
+1329067345 /usr/include/wx-2.8/wx/dc.h
+=======
 1330468755 /usr/include/wx-2.8/wx/gtk/bitmap.h
 
 1330468755 /usr/include/wx-2.8/wx/dc.h
+>>>>>>> 76b71e11f5a2d4135ad7c5dc295a6757d69c20b9
 	"wx/object.h"
 	"wx/intl.h"
 	"wx/cursor.h"
@@ -817,7 +1191,11 @@
 	"wx/os2/dc.h"
 	"wx/dcgraph.h"
 
+<<<<<<< HEAD
+1329067345 /usr/include/wx-2.8/wx/brush.h
+=======
 1330468755 /usr/include/wx-2.8/wx/brush.h
+>>>>>>> 76b71e11f5a2d4135ad7c5dc295a6757d69c20b9
 	"wx/defs.h"
 	"wx/object.h"
 	"wx/gdiobj.h"
@@ -832,9 +1210,15 @@
 	"wx/cocoa/brush.h"
 	"wx/os2/brush.h"
 
+<<<<<<< HEAD
+1329067346 /usr/include/wx-2.8/wx/gtk/brush.h
+
+1329067345 /usr/include/wx-2.8/wx/pen.h
+=======
 1330468755 /usr/include/wx-2.8/wx/gtk/brush.h
 
 1330468755 /usr/include/wx-2.8/wx/pen.h
+>>>>>>> 76b71e11f5a2d4135ad7c5dc295a6757d69c20b9
 	"wx/defs.h"
 	"wx/palmos/pen.h"
 	"wx/msw/pen.h"
@@ -847,6 +1231,15 @@
 	"wx/cocoa/pen.h"
 	"wx/os2/pen.h"
 
+<<<<<<< HEAD
+1329067346 /usr/include/wx-2.8/wx/gtk/pen.h
+	"wx/gdiobj.h"
+	"wx/gdicmn.h"
+
+1329067346 /usr/include/wx-2.8/wx/gtk/dc.h
+
+1329067345 /usr/include/wx-2.8/wx/dcgraph.h
+=======
 1330468755 /usr/include/wx-2.8/wx/gtk/pen.h
 	"wx/gdiobj.h"
 	"wx/gdicmn.h"
@@ -854,22 +1247,35 @@
 1330468755 /usr/include/wx-2.8/wx/gtk/dc.h
 
 1330468755 /usr/include/wx-2.8/wx/dcgraph.h
+>>>>>>> 76b71e11f5a2d4135ad7c5dc295a6757d69c20b9
 	"wx/geometry.h"
 	"wx/dynarray.h"
 	"wx/graphics.h"
 
+<<<<<<< HEAD
+1329067346 /usr/include/wx-2.8/wx/geometry.h
+=======
 1330468755 /usr/include/wx-2.8/wx/geometry.h
+>>>>>>> 76b71e11f5a2d4135ad7c5dc295a6757d69c20b9
 	"wx/defs.h"
 	"wx/utils.h"
 	"wx/gdicmn.h"
 	"wx/math.h"
 
+<<<<<<< HEAD
+1329067345 /usr/include/wx-2.8/wx/graphics.h
+=======
 1330468755 /usr/include/wx-2.8/wx/graphics.h
+>>>>>>> 76b71e11f5a2d4135ad7c5dc295a6757d69c20b9
 	"wx/defs.h"
 	"wx/geometry.h"
 	"wx/dynarray.h"
 
+<<<<<<< HEAD
+1329067345 /usr/include/wx-2.8/wx/dcclient.h
+=======
 1330468755 /usr/include/wx-2.8/wx/dcclient.h
+>>>>>>> 76b71e11f5a2d4135ad7c5dc295a6757d69c20b9
 	"wx/defs.h"
 	"wx/palmos/dcclient.h"
 	"wx/msw/dcclient.h"
@@ -883,11 +1289,19 @@
 	"wx/cocoa/dcclient.h"
 	"wx/os2/dcclient.h"
 
+<<<<<<< HEAD
+1329067346 /usr/include/wx-2.8/wx/gtk/dcclient.h
+	"wx/dc.h"
+	"wx/region.h"
+
+1329067345 /usr/include/wx-2.8/wx/dcmemory.h
+=======
 1330468755 /usr/include/wx-2.8/wx/gtk/dcclient.h
 	"wx/dc.h"
 	"wx/region.h"
 
 1330468755 /usr/include/wx-2.8/wx/dcmemory.h
+>>>>>>> 76b71e11f5a2d4135ad7c5dc295a6757d69c20b9
 	"wx/bitmap.h"
 	"wx/palmos/dcmemory.h"
 	"wx/msw/dcmemory.h"
@@ -901,17 +1315,28 @@
 	"wx/cocoa/dcmemory.h"
 	"wx/os2/dcmemory.h"
 
+<<<<<<< HEAD
+1329067346 /usr/include/wx-2.8/wx/gtk/dcmemory.h
+	"wx/dcclient.h"
+
+1329067345 /usr/include/wx-2.8/wx/dcprint.h
+=======
 1330468755 /usr/include/wx-2.8/wx/gtk/dcmemory.h
 	"wx/dcclient.h"
 
 1330468755 /usr/include/wx-2.8/wx/dcprint.h
+>>>>>>> 76b71e11f5a2d4135ad7c5dc295a6757d69c20b9
 	"wx/defs.h"
 	"wx/palmos/dcprint.h"
 	"wx/msw/dcprint.h"
 	"wx/os2/dcprint.h"
 	"wx/mac/dcprint.h"
 
+<<<<<<< HEAD
+1329067345 /usr/include/wx-2.8/wx/dcscreen.h
+=======
 1330468755 /usr/include/wx-2.8/wx/dcscreen.h
+>>>>>>> 76b71e11f5a2d4135ad7c5dc295a6757d69c20b9
 	"wx/defs.h"
 	"wx/palmos/dcscreen.h"
 	"wx/msw/dcscreen.h"
@@ -925,10 +1350,17 @@
 	"wx/cocoa/dcscreen.h"
 	"wx/os2/dcscreen.h"
 
+<<<<<<< HEAD
+1329067346 /usr/include/wx-2.8/wx/gtk/dcscreen.h
+	"wx/dcclient.h"
+
+1329067345 /usr/include/wx-2.8/wx/button.h
+=======
 1330468755 /usr/include/wx-2.8/wx/gtk/dcscreen.h
 	"wx/dcclient.h"
 
 1330468755 /usr/include/wx-2.8/wx/button.h
+>>>>>>> 76b71e11f5a2d4135ad7c5dc295a6757d69c20b9
 	"wx/defs.h"
 	"wx/control.h"
 	"wx/univ/button.h"
@@ -941,7 +1373,11 @@
 	"wx/os2/button.h"
 	"wx/palmos/button.h"
 
+<<<<<<< HEAD
+1329067345 /usr/include/wx-2.8/wx/control.h
+=======
 1330468755 /usr/include/wx-2.8/wx/control.h
+>>>>>>> 76b71e11f5a2d4135ad7c5dc295a6757d69c20b9
 	"wx/defs.h"
 	"wx/window.h"
 	"wx/univ/control.h"
@@ -954,11 +1390,19 @@
 	"wx/cocoa/control.h"
 	"wx/os2/control.h"
 
+<<<<<<< HEAD
+1329067347 /usr/include/wx-2.8/wx/gtk/control.h
+
+1329067347 /usr/include/wx-2.8/wx/gtk/button.h
+
+1329067346 /usr/include/wx-2.8/wx/menuitem.h
+=======
 1330468755 /usr/include/wx-2.8/wx/gtk/control.h
 
 1330468755 /usr/include/wx-2.8/wx/gtk/button.h
 
 1330468755 /usr/include/wx-2.8/wx/menuitem.h
+>>>>>>> 76b71e11f5a2d4135ad7c5dc295a6757d69c20b9
 	"wx/defs.h"
 	"wx/object.h"
 	"wx/univ/menuitem.h"
@@ -971,10 +1415,17 @@
 	"wx/cocoa/menuitem.h"
 	"wx/os2/menuitem.h"
 
+<<<<<<< HEAD
+1329067347 /usr/include/wx-2.8/wx/gtk/menuitem.h
+	"wx/bitmap.h"
+
+1329067345 /usr/include/wx-2.8/wx/menu.h
+=======
 1330468755 /usr/include/wx-2.8/wx/gtk/menuitem.h
 	"wx/bitmap.h"
 
 1330468755 /usr/include/wx-2.8/wx/menu.h
+>>>>>>> 76b71e11f5a2d4135ad7c5dc295a6757d69c20b9
 	"wx/defs.h"
 	"wx/list.h"
 	"wx/window.h"
@@ -989,9 +1440,15 @@
 	"wx/cocoa/menu.h"
 	"wx/os2/menu.h"
 
+<<<<<<< HEAD
+1329067347 /usr/include/wx-2.8/wx/gtk/menu.h
+
+1329067345 /usr/include/wx-2.8/wx/icon.h
+=======
 1330468755 /usr/include/wx-2.8/wx/gtk/menu.h
 
 1330468755 /usr/include/wx-2.8/wx/icon.h
+>>>>>>> 76b71e11f5a2d4135ad7c5dc295a6757d69c20b9
 	"wx/iconloc.h"
 	"wx/generic/icon.h"
 	"wx/msw/icon.h"
@@ -1006,6 +1463,15 @@
 	"wx/os2/icon.h"
 	"wx/variant.h"
 
+<<<<<<< HEAD
+1329067344 /usr/include/wx-2.8/wx/iconloc.h
+	"wx/string.h"
+
+1329067346 /usr/include/wx-2.8/wx/generic/icon.h
+	"wx/bitmap.h"
+
+1329067345 /usr/include/wx-2.8/wx/dialog.h
+=======
 1330468754 /usr/include/wx-2.8/wx/iconloc.h
 	"wx/string.h"
 
@@ -1013,6 +1479,7 @@
 	"wx/bitmap.h"
 
 1330468755 /usr/include/wx-2.8/wx/dialog.h
+>>>>>>> 76b71e11f5a2d4135ad7c5dc295a6757d69c20b9
 	"wx/defs.h"
 	"wx/containr.h"
 	"wx/toplevel.h"
@@ -1026,10 +1493,17 @@
 	"wx/cocoa/dialog.h"
 	"wx/os2/dialog.h"
 
+<<<<<<< HEAD
+1329067347 /usr/include/wx-2.8/wx/gtk/dialog.h
+	"wx/defs.h"
+
+1329067345 /usr/include/wx-2.8/wx/timer.h
+=======
 1330468755 /usr/include/wx-2.8/wx/gtk/dialog.h
 	"wx/defs.h"
 
 1330468754 /usr/include/wx-2.8/wx/timer.h
+>>>>>>> 76b71e11f5a2d4135ad7c5dc295a6757d69c20b9
 	"wx/defs.h"
 	"wx/object.h"
 	"wx/longlong.h"
@@ -1045,6 +1519,17 @@
 	"wx/mac/timer.h"
 	"wx/os2/timer.h"
 
+<<<<<<< HEAD
+1329067346 /usr/include/wx-2.8/wx/gtk/timer.h
+
+1329067345 /usr/include/wx-2.8/wx/generic/timer.h
+
+1329067345 /usr/include/wx-2.8/wx/settings.h
+	"wx/colour.h"
+	"wx/font.h"
+
+1329067345 /usr/include/wx-2.8/wx/msgdlg.h
+=======
 1330468755 /usr/include/wx-2.8/wx/gtk/timer.h
 
 1330468755 /usr/include/wx-2.8/wx/generic/timer.h
@@ -1054,6 +1539,7 @@
 	"wx/font.h"
 
 1330468755 /usr/include/wx-2.8/wx/msgdlg.h
+>>>>>>> 76b71e11f5a2d4135ad7c5dc295a6757d69c20b9
 	"wx/defs.h"
 	"wx/generic/msgdlgg.h"
 	"wx/generic/msgdlgg.h"
@@ -1067,6 +1553,17 @@
 	"wx/cocoa/msgdlg.h"
 	"wx/os2/msgdlg.h"
 
+<<<<<<< HEAD
+1329067345 /usr/include/wx-2.8/wx/generic/msgdlgg.h
+	"wx/defs.h"
+	"wx/dialog.h"
+
+1329067347 /usr/include/wx-2.8/wx/gtk/msgdlg.h
+	"wx/defs.h"
+	"wx/dialog.h"
+
+1329067345 /usr/include/wx-2.8/wx/cmndata.h
+=======
 1330468755 /usr/include/wx-2.8/wx/generic/msgdlgg.h
 	"wx/defs.h"
 	"wx/dialog.h"
@@ -1076,6 +1573,7 @@
 	"wx/dialog.h"
 
 1330468755 /usr/include/wx-2.8/wx/cmndata.h
+>>>>>>> 76b71e11f5a2d4135ad7c5dc295a6757d69c20b9
 	"wx/window.h"
 	"wx/font.h"
 	"wx/encinfo.h"
@@ -1083,10 +1581,17 @@
 	"wx/gdicmn.h"
 	"wx/stream.h"
 
+<<<<<<< HEAD
+1329067345 /usr/include/wx-2.8/wx/encinfo.h
+	"wx/string.h"
+
+1329067346 /usr/include/wx-2.8/wx/dataobj.h
+=======
 1330468755 /usr/include/wx-2.8/wx/encinfo.h
 	"wx/string.h"
 
 1330468755 /usr/include/wx-2.8/wx/dataobj.h
+>>>>>>> 76b71e11f5a2d4135ad7c5dc295a6757d69c20b9
 	"wx/defs.h"
 	"wx/string.h"
 	"wx/bitmap.h"
@@ -1117,6 +1622,19 @@
 	"wx/cocoa/dataobj2.h"
 	"wx/os2/dataobj2.h"
 
+<<<<<<< HEAD
+1329067346 /usr/include/wx-2.8/wx/gtk/dataform.h
+
+1329067346 /usr/include/wx-2.8/wx/gtk/dataobj.h
+
+1329067346 /usr/include/wx-2.8/wx/gtk/dataobj2.h
+
+1329067345 /usr/include/wx-2.8/wx/ctrlsub.h
+	"wx/defs.h"
+	"wx/control.h"
+
+1329067345 /usr/include/wx-2.8/wx/bmpbuttn.h
+=======
 1330468755 /usr/include/wx-2.8/wx/gtk/dataform.h
 
 1330468755 /usr/include/wx-2.8/wx/gtk/dataobj.h
@@ -1128,6 +1646,7 @@
 	"wx/control.h"
 
 1330468755 /usr/include/wx-2.8/wx/bmpbuttn.h
+>>>>>>> 76b71e11f5a2d4135ad7c5dc295a6757d69c20b9
 	"wx/defs.h"
 	"wx/bitmap.h"
 	"wx/button.h"
@@ -1140,9 +1659,15 @@
 	"wx/cocoa/bmpbuttn.h"
 	"wx/os2/bmpbuttn.h"
 
+<<<<<<< HEAD
+1329067347 /usr/include/wx-2.8/wx/gtk/bmpbuttn.h
+
+1329067345 /usr/include/wx-2.8/wx/checkbox.h
+=======
 1330468755 /usr/include/wx-2.8/wx/gtk/bmpbuttn.h
 
 1330468755 /usr/include/wx-2.8/wx/checkbox.h
+>>>>>>> 76b71e11f5a2d4135ad7c5dc295a6757d69c20b9
 	"wx/defs.h"
 	"wx/control.h"
 	"wx/univ/checkbox.h"
@@ -1155,9 +1680,15 @@
 	"wx/os2/checkbox.h"
 	"wx/palmos/checkbox.h"
 
+<<<<<<< HEAD
+1329067347 /usr/include/wx-2.8/wx/gtk/checkbox.h
+
+1329067345 /usr/include/wx-2.8/wx/checklst.h
+=======
 1330468755 /usr/include/wx-2.8/wx/gtk/checkbox.h
 
 1330468755 /usr/include/wx-2.8/wx/checklst.h
+>>>>>>> 76b71e11f5a2d4135ad7c5dc295a6757d69c20b9
 	"wx/listbox.h"
 	"wx/univ/checklst.h"
 	"wx/msw/wince/checklst.h"
@@ -1169,7 +1700,11 @@
 	"wx/cocoa/checklst.h"
 	"wx/os2/checklst.h"
 
+<<<<<<< HEAD
+1329067345 /usr/include/wx-2.8/wx/listbox.h
+=======
 1330468755 /usr/include/wx-2.8/wx/listbox.h
+>>>>>>> 76b71e11f5a2d4135ad7c5dc295a6757d69c20b9
 	"wx/defs.h"
 	"wx/ctrlsub.h"
 	"wx/univ/listbox.h"
@@ -1181,11 +1716,19 @@
 	"wx/os2/listbox.h"
 	"wx/cocoa/listbox.h"
 
+<<<<<<< HEAD
+1329067347 /usr/include/wx-2.8/wx/gtk/listbox.h
+
+1329067347 /usr/include/wx-2.8/wx/gtk/checklst.h
+
+1329067345 /usr/include/wx-2.8/wx/choice.h
+=======
 1330468755 /usr/include/wx-2.8/wx/gtk/listbox.h
 
 1330468755 /usr/include/wx-2.8/wx/gtk/checklst.h
 
 1330468755 /usr/include/wx-2.8/wx/choice.h
+>>>>>>> 76b71e11f5a2d4135ad7c5dc295a6757d69c20b9
 	"wx/defs.h"
 	"wx/ctrlsub.h"
 	"wx/univ/choice.h"
@@ -1198,9 +1741,15 @@
 	"wx/cocoa/choice.h"
 	"wx/os2/choice.h"
 
+<<<<<<< HEAD
+1329067347 /usr/include/wx-2.8/wx/gtk/choice.h
+
+1329067345 /usr/include/wx-2.8/wx/scrolbar.h
+=======
 1330468755 /usr/include/wx-2.8/wx/gtk/choice.h
 
 1330468755 /usr/include/wx-2.8/wx/scrolbar.h
+>>>>>>> 76b71e11f5a2d4135ad7c5dc295a6757d69c20b9
 	"wx/defs.h"
 	"wx/control.h"
 	"wx/univ/scrolbar.h"
@@ -1212,10 +1761,17 @@
 	"wx/cocoa/scrolbar.h"
 	"wx/os2/scrolbar.h"
 
+<<<<<<< HEAD
+1329067347 /usr/include/wx-2.8/wx/gtk/scrolbar.h
+	"wx/defs.h"
+
+1329067346 /usr/include/wx-2.8/wx/stattext.h
+=======
 1330468755 /usr/include/wx-2.8/wx/gtk/scrolbar.h
 	"wx/defs.h"
 
 1330468755 /usr/include/wx-2.8/wx/stattext.h
+>>>>>>> 76b71e11f5a2d4135ad7c5dc295a6757d69c20b9
 	"wx/defs.h"
 	"wx/control.h"
 	"wx/univ/stattext.h"
@@ -1228,9 +1784,15 @@
 	"wx/os2/stattext.h"
 	"wx/palmos/stattext.h"
 
+<<<<<<< HEAD
+1329067347 /usr/include/wx-2.8/wx/gtk/stattext.h
+
+1329067346 /usr/include/wx-2.8/wx/statbmp.h
+=======
 1330468755 /usr/include/wx-2.8/wx/gtk/stattext.h
 
 1330468755 /usr/include/wx-2.8/wx/statbmp.h
+>>>>>>> 76b71e11f5a2d4135ad7c5dc295a6757d69c20b9
 	"wx/defs.h"
 	"wx/control.h"
 	"wx/bitmap.h"
@@ -1244,10 +1806,17 @@
 	"wx/cocoa/statbmp.h"
 	"wx/os2/statbmp.h"
 
+<<<<<<< HEAD
+1329067347 /usr/include/wx-2.8/wx/gtk/statbmp.h
+	"wx/icon.h"
+
+1329067346 /usr/include/wx-2.8/wx/statbox.h
+=======
 1330468755 /usr/include/wx-2.8/wx/gtk/statbmp.h
 	"wx/icon.h"
 
 1330468755 /usr/include/wx-2.8/wx/statbox.h
+>>>>>>> 76b71e11f5a2d4135ad7c5dc295a6757d69c20b9
 	"wx/defs.h"
 	"wx/control.h"
 	"wx/univ/statbox.h"
@@ -1259,9 +1828,15 @@
 	"wx/cocoa/statbox.h"
 	"wx/os2/statbox.h"
 
+<<<<<<< HEAD
+1329067347 /usr/include/wx-2.8/wx/gtk/statbox.h
+
+1329067345 /usr/include/wx-2.8/wx/radiobox.h
+=======
 1330468755 /usr/include/wx-2.8/wx/gtk/statbox.h
 
 1330468755 /usr/include/wx-2.8/wx/radiobox.h
+>>>>>>> 76b71e11f5a2d4135ad7c5dc295a6757d69c20b9
 	"wx/ctrlsub.h"
 	"wx/dynarray.h"
 	"wx/univ/radiobox.h"
@@ -1274,11 +1849,19 @@
 	"wx/os2/radiobox.h"
 	"wx/palmos/radiobox.h"
 
+<<<<<<< HEAD
+1329067347 /usr/include/wx-2.8/wx/gtk/radiobox.h
+	"wx/bitmap.h"
+	"wx/list.h"
+
+1329067345 /usr/include/wx-2.8/wx/radiobut.h
+=======
 1330468755 /usr/include/wx-2.8/wx/gtk/radiobox.h
 	"wx/bitmap.h"
 	"wx/list.h"
 
 1330468755 /usr/include/wx-2.8/wx/radiobut.h
+>>>>>>> 76b71e11f5a2d4135ad7c5dc295a6757d69c20b9
 	"wx/defs.h"
 	"wx/control.h"
 	"wx/univ/radiobut.h"
@@ -1291,9 +1874,15 @@
 	"wx/os2/radiobut.h"
 	"wx/palmos/radiobut.h"
 
+<<<<<<< HEAD
+1329067347 /usr/include/wx-2.8/wx/gtk/radiobut.h
+
+1329067346 /usr/include/wx-2.8/wx/textctrl.h
+=======
 1330468755 /usr/include/wx-2.8/wx/gtk/radiobut.h
 
 1330468755 /usr/include/wx-2.8/wx/textctrl.h
+>>>>>>> 76b71e11f5a2d4135ad7c5dc295a6757d69c20b9
 	"wx/defs.h"
 	"wx/control.h"
 	"wx/dynarray.h"
@@ -1310,14 +1899,24 @@
 	"wx/cocoa/textctrl.h"
 	"wx/os2/textctrl.h"
 
+<<<<<<< HEAD
+1329067344 /usr/include/wx-2.8/wx/ioswrap.h
+=======
 1330468754 /usr/include/wx-2.8/wx/ioswrap.h
+>>>>>>> 76b71e11f5a2d4135ad7c5dc295a6757d69c20b9
 	<iostream.h>
 	<iostream>
 	"wx/msw/winundef.h"
 
+<<<<<<< HEAD
+1329067347 /usr/include/wx-2.8/wx/gtk/textctrl.h
+
+1329067346 /usr/include/wx-2.8/wx/slider.h
+=======
 1330468755 /usr/include/wx-2.8/wx/gtk/textctrl.h
 
 1330468755 /usr/include/wx-2.8/wx/slider.h
+>>>>>>> 76b71e11f5a2d4135ad7c5dc295a6757d69c20b9
 	"wx/defs.h"
 	"wx/control.h"
 	"wx/univ/slider.h"
@@ -1330,9 +1929,15 @@
 	"wx/os2/slider.h"
 	"wx/palmos/slider.h"
 
+<<<<<<< HEAD
+1329067347 /usr/include/wx-2.8/wx/gtk/slider.h
+
+1329067345 /usr/include/wx-2.8/wx/gauge.h
+=======
 1330468755 /usr/include/wx-2.8/wx/gtk/slider.h
 
 1330468755 /usr/include/wx-2.8/wx/gauge.h
+>>>>>>> 76b71e11f5a2d4135ad7c5dc295a6757d69c20b9
 	"wx/defs.h"
 	"wx/control.h"
 	"wx/univ/gauge.h"
@@ -1344,16 +1949,28 @@
 	"wx/cocoa/gauge.h"
 	"wx/os2/gauge.h"
 
+<<<<<<< HEAD
+1329067347 /usr/include/wx-2.8/wx/gtk/gauge.h
+
+1329067345 /usr/include/wx-2.8/wx/scrolwin.h
+=======
 1330468755 /usr/include/wx-2.8/wx/gtk/gauge.h
 
 1330468755 /usr/include/wx-2.8/wx/scrolwin.h
+>>>>>>> 76b71e11f5a2d4135ad7c5dc295a6757d69c20b9
 	"wx/panel.h"
 	"wx/gtk/scrolwin.h"
 	"wx/gtk1/scrolwin.h"
 
+<<<<<<< HEAD
+1329067347 /usr/include/wx-2.8/wx/gtk/scrolwin.h
+
+1329067345 /usr/include/wx-2.8/wx/dirdlg.h
+=======
 1330468755 /usr/include/wx-2.8/wx/gtk/scrolwin.h
 
 1330468755 /usr/include/wx-2.8/wx/dirdlg.h
+>>>>>>> 76b71e11f5a2d4135ad7c5dc295a6757d69c20b9
 	"wx/dialog.h"
 	"wx/generic/dirdlgg.h"
 	"wx/generic/dirdlgg.h"
@@ -1365,6 +1982,15 @@
 	"wx/cocoa/dirdlg.h"
 	"wx/generic/dirdlgg.h"
 
+<<<<<<< HEAD
+1329067346 /usr/include/wx-2.8/wx/generic/dirdlgg.h
+	"wx/dialog.h"
+
+1329067347 /usr/include/wx-2.8/wx/gtk/dirdlg.h
+	"wx/generic/dirdlgg.h"
+
+1329067346 /usr/include/wx-2.8/wx/toolbar.h
+=======
 1330468755 /usr/include/wx-2.8/wx/generic/dirdlgg.h
 	"wx/dialog.h"
 
@@ -1372,6 +1998,7 @@
 	"wx/generic/dirdlgg.h"
 
 1330468755 /usr/include/wx-2.8/wx/toolbar.h
+>>>>>>> 76b71e11f5a2d4135ad7c5dc295a6757d69c20b9
 	"wx/defs.h"
 	"wx/tbarbase.h"
 	"wx/univ/toolbar.h"
@@ -1385,15 +2012,25 @@
 	"wx/cocoa/toolbar.h"
 	"wx/os2/toolbar.h"
 
+<<<<<<< HEAD
+1329067346 /usr/include/wx-2.8/wx/tbarbase.h
+=======
 1330468755 /usr/include/wx-2.8/wx/tbarbase.h
+>>>>>>> 76b71e11f5a2d4135ad7c5dc295a6757d69c20b9
 	"wx/defs.h"
 	"wx/bitmap.h"
 	"wx/list.h"
 	"wx/control.h"
 
+<<<<<<< HEAD
+1329067347 /usr/include/wx-2.8/wx/gtk/tbargtk.h
+
+1329067345 /usr/include/wx-2.8/wx/combobox.h
+=======
 1330468755 /usr/include/wx-2.8/wx/gtk/tbargtk.h
 
 1330468755 /usr/include/wx-2.8/wx/combobox.h
+>>>>>>> 76b71e11f5a2d4135ad7c5dc295a6757d69c20b9
 	"wx/defs.h"
 	"wx/textctrl.h"
 	"wx/ctrlsub.h"
@@ -1406,6 +2043,18 @@
 	"wx/cocoa/combobox.h"
 	"wx/os2/combobox.h"
 
+<<<<<<< HEAD
+1329067347 /usr/include/wx-2.8/wx/gtk/combobox.h
+
+1329067345 /usr/include/wx-2.8/wx/layout.h
+	"wx/object.h"
+
+1329067345 /usr/include/wx-2.8/wx/sizer.h
+	"wx/defs.h"
+	"wx/window.h"
+
+1329067345 /usr/include/wx-2.8/wx/mdi.h
+=======
 1330468755 /usr/include/wx-2.8/wx/gtk/combobox.h
 
 1330468755 /usr/include/wx-2.8/wx/layout.h
@@ -1416,6 +2065,7 @@
 	"wx/window.h"
 
 1330468755 /usr/include/wx-2.8/wx/mdi.h
+>>>>>>> 76b71e11f5a2d4135ad7c5dc295a6757d69c20b9
 	"wx/defs.h"
 	"wx/generic/mdig.h"
 	"wx/msw/mdi.h"
@@ -1426,10 +2076,17 @@
 	"wx/cocoa/mdi.h"
 	"wx/generic/mdig.h"
 
+<<<<<<< HEAD
+1329067347 /usr/include/wx-2.8/wx/gtk/mdi.h
+	"wx/frame.h"
+
+1329067346 /usr/include/wx-2.8/wx/statusbr.h
+=======
 1330468755 /usr/include/wx-2.8/wx/gtk/mdi.h
 	"wx/frame.h"
 
 1330468755 /usr/include/wx-2.8/wx/statusbr.h
+>>>>>>> 76b71e11f5a2d4135ad7c5dc295a6757d69c20b9
 	"wx/defs.h"
 	"wx/window.h"
 	"wx/list.h"
@@ -1441,11 +2098,29 @@
 	"wx/mac/statusbr.h"
 	"wx/generic/statusbr.h"
 
+<<<<<<< HEAD
+1329067346 /usr/include/wx-2.8/wx/generic/statusbr.h
+=======
 1330468755 /usr/include/wx-2.8/wx/generic/statusbr.h
+>>>>>>> 76b71e11f5a2d4135ad7c5dc295a6757d69c20b9
 	"wx/defs.h"
 	"wx/pen.h"
 	"wx/arrstr.h"
 
+<<<<<<< HEAD
+1329067345 /usr/include/wx-2.8/wx/choicdlg.h
+	"wx/generic/choicdgg.h"
+
+1329067345 /usr/include/wx-2.8/wx/generic/choicdgg.h
+	"wx/dynarray.h"
+	"wx/dialog.h"
+
+1329067346 /usr/include/wx-2.8/wx/textdlg.h
+	"wx/generic/textdlgg.h"
+	"wx/numdlg.h"
+
+1329067345 /usr/include/wx-2.8/wx/generic/textdlgg.h
+=======
 1330468755 /usr/include/wx-2.8/wx/choicdlg.h
 	"wx/generic/choicdgg.h"
 
@@ -1458,15 +2133,31 @@
 	"wx/numdlg.h"
 
 1330468755 /usr/include/wx-2.8/wx/generic/textdlgg.h
+>>>>>>> 76b71e11f5a2d4135ad7c5dc295a6757d69c20b9
 	"wx/defs.h"
 	"wx/dialog.h"
 	"wx/valtext.h"
 
+<<<<<<< HEAD
+1329067346 /usr/include/wx-2.8/wx/valtext.h
+=======
 1330468755 /usr/include/wx-2.8/wx/valtext.h
+>>>>>>> 76b71e11f5a2d4135ad7c5dc295a6757d69c20b9
 	"wx/defs.h"
 	"wx/textctrl.h"
 	"wx/validate.h"
 
+<<<<<<< HEAD
+1329067345 /usr/include/wx-2.8/wx/numdlg.h
+	"wx/defs.h"
+	"wx/generic/numdlgg.h"
+
+1329067345 /usr/include/wx-2.8/wx/generic/numdlgg.h
+	"wx/defs.h"
+	"wx/dialog.h"
+
+1329067345 /usr/include/wx-2.8/wx/filedlg.h
+=======
 1330468755 /usr/include/wx-2.8/wx/numdlg.h
 	"wx/defs.h"
 	"wx/generic/numdlgg.h"
@@ -1476,6 +2167,7 @@
 	"wx/dialog.h"
 
 1330468755 /usr/include/wx-2.8/wx/filedlg.h
+>>>>>>> 76b71e11f5a2d4135ad7c5dc295a6757d69c20b9
 	"wx/defs.h"
 	"wx/dialog.h"
 	"wx/arrstr.h"
@@ -1489,25 +2181,52 @@
 	"wx/cocoa/filedlg.h"
 	"wx/os2/filedlg.h"
 
+<<<<<<< HEAD
+1329067345 /usr/include/wx-2.8/wx/generic/filedlgg.h
+=======
 1330468755 /usr/include/wx-2.8/wx/generic/filedlgg.h
+>>>>>>> 76b71e11f5a2d4135ad7c5dc295a6757d69c20b9
 	"wx/listctrl.h"
 	"wx/datetime.h"
 	"wx/filefn.h"
 	"wx/filedlg.h"
 
+<<<<<<< HEAD
+1329067346 /usr/include/wx-2.8/wx/listctrl.h
+=======
 1330468755 /usr/include/wx-2.8/wx/listctrl.h
+>>>>>>> 76b71e11f5a2d4135ad7c5dc295a6757d69c20b9
 	"wx/defs.h"
 	"wx/listbase.h"
 	"wx/msw/listctrl.h"
 	"wx/mac/carbon/listctrl.h"
 	"wx/generic/listctrl.h"
 
+<<<<<<< HEAD
+1329067346 /usr/include/wx-2.8/wx/listbase.h
+=======
 1330468755 /usr/include/wx-2.8/wx/listbase.h
+>>>>>>> 76b71e11f5a2d4135ad7c5dc295a6757d69c20b9
 	"wx/colour.h"
 	"wx/font.h"
 	"wx/gdicmn.h"
 	"wx/event.h"
 
+<<<<<<< HEAD
+1329067346 /usr/include/wx-2.8/wx/generic/listctrl.h
+	"wx/textctrl.h"
+
+1329067347 /usr/include/wx-2.8/wx/gtk/filedlg.h
+	"wx/generic/filedlgg.h"
+
+1353064166 source:/home/jt117/Documents/AlgoGraphique/AlgoGraphique/IllegalArgumentException.cpp
+	<IllegalArgumentException.h>
+
+1353064166 source:/home/jt117/Documents/AlgoGraphique/AlgoGraphique/IndexOutOfBoundsException.cpp
+	<IndexOutOfBoundsException.h>
+
+1353064166 source:/home/jt117/Documents/AlgoGraphique/AlgoGraphique/MainFrame.cpp
+=======
 1330468755 /usr/include/wx-2.8/wx/generic/listctrl.h
 	"wx/textctrl.h"
 
@@ -1521,11 +2240,25 @@
 	<IndexOutOfBoundsException.h>
 
 1353064166 source:/home/albin/Developments/AlgoGraphique/MainFrame.cpp
+>>>>>>> 76b71e11f5a2d4135ad7c5dc295a6757d69c20b9
 	<MainFrame.h>
 	<FrameCounter.h>
 	<wxid.h>
 	<Piloter.h>
 
+<<<<<<< HEAD
+1353064166 source:/home/jt117/Documents/AlgoGraphique/AlgoGraphique/Memory.cpp
+	<Memory.h>
+
+1353064166 source:/home/jt117/Documents/AlgoGraphique/AlgoGraphique/MemoryException.cpp
+	<MemoryException.h>
+
+1353064166 source:/home/jt117/Documents/AlgoGraphique/AlgoGraphique/Panel3D.cpp
+	<Panel3D.h>
+	<Renderer.h>
+
+1353064166 source:/home/jt117/Documents/AlgoGraphique/AlgoGraphique/Piloter.cpp
+=======
 1353064166 source:/home/albin/Developments/AlgoGraphique/Memory.cpp
 	<Memory.h>
 
@@ -1537,26 +2270,49 @@
 	<Renderer.h>
 
 1353064166 source:/home/albin/Developments/AlgoGraphique/Piloter.cpp
+>>>>>>> 76b71e11f5a2d4135ad7c5dc295a6757d69c20b9
 	<Piloter.h>
 	<Engine.h>
 	<wxid.h>
 	<MainFrame.h>
 
+<<<<<<< HEAD
+1353064166 source:/home/jt117/Documents/AlgoGraphique/AlgoGraphique/Renderable.cpp
+	<Renderable.h>
+	<FastMath.h>
+
+1353064166 source:/home/jt117/Documents/AlgoGraphique/AlgoGraphique/Renderer.cpp
+=======
 1353064166 source:/home/albin/Developments/AlgoGraphique/Renderable.cpp
 	<Renderable.h>
 	<FastMath.h>
 
 1353064166 source:/home/albin/Developments/AlgoGraphique/Renderer.cpp
+>>>>>>> 76b71e11f5a2d4135ad7c5dc295a6757d69c20b9
 	<Renderer.h>
 	<Panel3D.h>
 	<Engine.h>
 
+<<<<<<< HEAD
+1353064166 source:/home/jt117/Documents/AlgoGraphique/AlgoGraphique/ScanLineComputer.cpp
+=======
 1353064166 source:/home/albin/Developments/AlgoGraphique/ScanLineComputer.cpp
+>>>>>>> 76b71e11f5a2d4135ad7c5dc295a6757d69c20b9
 	<ScanLineComputer.h>
 	<Buffer.h>
 	<FastMath.h>
 	<limits.h>
 
+<<<<<<< HEAD
+1353064166 source:/home/jt117/Documents/AlgoGraphique/AlgoGraphique/ZBuffer.cpp
+	<ZBuffer.h>
+
+1353966249 source:/home/jt117/Documents/AlgoGraphique/AlgoGraphique/Buffer.cpp
+	<Buffer.h>
+	<FastMath.h>
+
+=======
 1353064166 source:/home/albin/Developments/AlgoGraphique/ZBuffer.cpp
 	<ZBuffer.h>
 
+>>>>>>> 76b71e11f5a2d4135ad7c5dc295a6757d69c20b9
