@@ -156,7 +156,7 @@ void Renderer::Draw()
 }
 void Renderer::DrawFilaire()
 {
-	// compléter ici
+
 }
 void Renderer::DrawFilaireCache()
 {
