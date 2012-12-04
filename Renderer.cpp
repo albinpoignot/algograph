@@ -2,6 +2,8 @@
 #include <Panel3D.h>
 #include <Engine.h>
 
+#include <iostream>
+
 // le constructeur
 Renderer::Renderer(Panel3D * _owner, Engine * _engine) :
 	owner(_owner), engine(_engine), drawable(&_engine->drawable),
@@ -156,15 +158,75 @@ void Renderer::Draw()
 }
 void Renderer::DrawFilaire()
 {
+    for( int i = 0; i < drawable->faces.size; ++i )
+	{
+        Face current = drawable->faces.data[i];
 
+        if( drawable->colorOnFace )
+        {
+            buffer->DrawLine( renderable.points2D.data[current.index1], renderable.points2D.data[current.index2], drawable->pointColors.data[current.index1], drawable->pointColors.data[current.index2] );
+            buffer->DrawLine( renderable.points2D.data[current.index1], renderable.points2D.data[current.index3], drawable->pointColors.data[current.index1], drawable->pointColors.data[current.index3] );
+            buffer->DrawLine( renderable.points2D.data[current.index2], renderable.points2D.data[current.index3], drawable->pointColors.data[current.index2], drawable->pointColors.data[current.index3] );
+        }
+        else
+        {
+            Color color = drawable->faceColors.data[i];
+
+            buffer->DrawLine( renderable.points2D.data[current.index1], renderable.points2D.data[current.index2], color, color );
+            buffer->DrawLine( renderable.points2D.data[current.index1], renderable.points2D.data[current.index3], color, color );
+            buffer->DrawLine( renderable.points2D.data[current.index2], renderable.points2D.data[current.index3], color, color );
+        }
+	}
 }
+
 void Renderer::DrawFilaireCache()
 {
-	// compléter ici
+    for( int i = 0; i < drawable->faces.size; ++i )
+    {
+        Face current = drawable->faces.data[i];
+
+        if( effectiveDrawable->faceVisibles.data[i] )
+        {
+            if( drawable->colorOnFace )
+            {
+                buffer->DrawLine( renderable.points2D.data[current.index1], renderable.points2D.data[current.index2], drawable->pointColors.data[current.index1], drawable->pointColors.data[current.index2] );
+                buffer->DrawLine( renderable.points2D.data[current.index1], renderable.points2D.data[current.index3], drawable->pointColors.data[current.index1], drawable->pointColors.data[current.index3] );
+                buffer->DrawLine( renderable.points2D.data[current.index2], renderable.points2D.data[current.index3], drawable->pointColors.data[current.index2], drawable->pointColors.data[current.index3] );
+            }
+            else
+            {
+                Color color = drawable->faceColors.data[i];
+
+                buffer->DrawLine( renderable.points2D.data[current.index1], renderable.points2D.data[current.index2], color, color );
+                buffer->DrawLine( renderable.points2D.data[current.index1], renderable.points2D.data[current.index3], color, color );
+                buffer->DrawLine( renderable.points2D.data[current.index2], renderable.points2D.data[current.index3], color, color );
+            }
+        }
+    }
 }
 void Renderer::DrawFacePleine()
 {
-	// compléter ici
+	for( int i = 0; i < drawable->faces.size; ++i )
+    {
+        Face current = drawable->faces.data[i];
+
+        if( effectiveDrawable->faceVisibles.data[i] )
+        {
+            if( drawable->colorOnFace )
+            {
+                buffer->DrawFilledTriangle( renderable.points2D.data[current.index1], renderable.points2D.data[current.index2], renderable.points2D.data[current.index3],
+                                            drawable->pointColors.data[current.index1], drawable->pointColors.data[current.index2], drawable->pointColors.data[current.index3] );
+
+            }
+            else
+            {
+                Color color = drawable->faceColors.data[i];
+
+                buffer->DrawFilledTriangle( renderable.points2D.data[current.index1], renderable.points2D.data[current.index2], renderable.points2D.data[current.index3],
+                                            color, color, color );
+            }
+        }
+    }
 }
 
 void Renderer::DrawLambert()

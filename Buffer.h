@@ -70,11 +70,6 @@ public:
 			const Coord3D normal3, const AmbientLight & ambientLight,
 			const PointLight & pointLight);
 
-    private:
-
-    bool isInside( Coord2D a, Coord2D b, Coord2D c, Coord2D point );
-    bool isRight( Coord2D a, Coord2D b, Coord2D point );
-
 };
 
 #endif /*BUFFER_H_*/
