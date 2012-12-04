@@ -156,8 +156,17 @@ void Renderer::Draw()
 }
 void Renderer::DrawFilaire()
 {
-	// compléter ici
+	/*for( int i = 0; i < drawable->faces.size; ++i )
+	{
+        Face current = drawable->faces.data[i];
+        Color color = drawable->faceColors.data[i];
+
+        buffer[currentBuffer].DrawLine( renderable.points2D.data[current.index1], renderable.points2D.data[current.index2], color, color );
+        buffer[currentBuffer].DrawLine( renderable.points2D.data[current.index1], renderable.points2D.data[current.index3], color, color );
+        buffer[currentBuffer].DrawLine( renderable.points2D.data[current.index2], renderable.points2D.data[current.index3], color, color );
+	}*/
 }
+
 void Renderer::DrawFilaireCache()
 {
 	// compléter ici
