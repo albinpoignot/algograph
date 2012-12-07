@@ -51,8 +51,96 @@ void ScanLineComputer::Compute(const Coord2D p1, const Coord2D p2,
 void ScanLineComputer::AddEdge(const Coord2D p1, const Coord2D p2,
 															 const int index1, const int index2)
 {
-	// compléter ici : calculer les points de la bordure et appeler AddPoint
-	// on utitlise la méthode de Bresenheim pour calculer les points du segment [p1,p2] et on les ajoute via la méthode AddPoint
+// Implémentation de l'algo en Pascal
+   int x, y;
+   int longX, longY;
+   int critere;
+   int const1, const2;
+   int incX, incY;
+   int compteur;
+
+   x = p1.x;
+   y = p1.y;
+
+// Calcul des longueurs entre les points
+   longX = p2.x - x;
+   longY = p2.y - y;
+
+// Si la longueur est inférieure à 0, c'est que x1 est "avant" x2
+// on devra donc décrémenter X plutôt que l'incrémenter. On inverse la longueur
+   if(longX >= 0)
+   {
+   incX = 1;
+   }
+   else
+   {
+   incX = -1;
+   longX = -longX;
+   }
+
+// Idem que pour X
+   if(longY >= 0 )
+   {
+       incY = 1;
+   }
+   else
+   {
+       incY = -1;
+       longY = -longY;
+   }
+
+// Dessin du point : les opérations se font selon l'octant
+   if(longY < longX)
+   {
+       const1 = 2 * (longY - longX);
+       const2 = 2 * longY;
+
+       critere = const2 - longX;
+
+       for(compteur = 1; compteur <= longX; compteur++)
+       {
+       // Dessin
+       AddPoint(x, y, p1, p2, index1, index2);
+       // Incrémentation des coordonnées pour le prochain passage
+           if(critere > 0)
+           {
+               y +=incY;
+               critere +=const1;
+           }
+           else
+           {
+               critere += const2;
+           }
+
+           x += incX;
+       }
+   }
+   else
+   {
+       const1 = 2 * (longX - longY);
+       const2 = 2 * longX;
+
+       critere = const2 - longY;
+
+       for(compteur = 1; compteur <= longY; compteur++)
+       {
+       // Dessin
+           AddPoint(x, y, p1, p2, index1, index2);
+
+       // Incrémentation des coordonnées pour le prochain passage
+           if(critere > 0)
+           {
+               x += incX;
+               critere += const1;
+           }
+           else
+           {
+           critere += const2;
+           }
+
+           y += incY;
+       }
+   }
 }
 
 // ATTENTION : y doit être dans l'intervalle [0;height[ pour que cela fonctionne

@@ -69,7 +69,6 @@ public:
 			const Coord3D normal1, const Coord3D normal2,
 			const Coord3D normal3, const AmbientLight & ambientLight,
 			const PointLight & pointLight);
-
 };
 
 #endif /*BUFFER_H_*/
