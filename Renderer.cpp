@@ -231,8 +231,42 @@ void Renderer::DrawFacePleine()
 
 void Renderer::DrawLambert()
 {
-	// compléter ici
+	for( int i = 0; i < drawable->faces.size; ++i )
+    {
+        Face current = drawable->faces.data[i];
+
+        if( effectiveDrawable->faceVisibles.data[i] )
+        {
+            Coord3D p1 = effectiveDrawable->points.data[current.index1];
+            Coord3D p2 = effectiveDrawable->points.data[current.index2];
+            Coord3D p3 = effectiveDrawable->points.data[current.index3];
+
+            double baryCentreX = (p1.x + p2.x + p3.x) / 3;
+            double baryCentreY = (p1.y + p2.y + p3.y) / 3;
+            double baryCentreZ = (p1.z + p2.z + p3.z) / 3;
+
+            Color colorLight = pointLight.GetColor( Coord3D( baryCentreX, baryCentreY, baryCentreZ), effectiveDrawable->faceNormals.data[i] );
+            Color colorAmbient = ambientLight.ambientColor;
+            Color color = colorLight + colorAmbient;
+
+            if( drawable->colorOnFace )
+            {
+                buffer->DrawFilledTriangle( renderable.points2D.data[current.index1] , renderable.points2D.data[current.index2], renderable.points2D.data[current.index3],
+                                            drawable->pointColors.data[current.index1]*color,
+                                            drawable->pointColors.data[current.index2]*color,
+                                            drawable->pointColors.data[current.index3]*color );
+            }
+            else
+            {
+                Color colorCurrent = drawable->faceColors.data[i];
+
+                buffer->DrawFilledTriangle( renderable.points2D.data[current.index1], renderable.points2D.data[current.index2], renderable.points2D.data[current.index3],
+                                            colorCurrent*color, colorCurrent*color, colorCurrent*color );
+            }
+        }
+    }
 }
+
 void Renderer::DrawGouraud()
 {
 	// compléter ici
