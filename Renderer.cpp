@@ -315,5 +315,49 @@ void Renderer::DrawGouraud()
 }
 void Renderer::DrawPhong()
 {
-	// compléter ici
+	for( int i = 0; i < drawable->faces.size; ++i )
+    {
+        Face current = drawable->faces.data[i];
+
+        if( effectiveDrawable->faceVisibles.data[i] )
+        {
+            // Récupération des Coord3D des points à dessiner
+            Coord3D posi1 = effectiveDrawable->points.data[current.index1];
+            Coord3D posi2 = effectiveDrawable->points.data[current.index2];
+            Coord3D posi3 = effectiveDrawable->points.data[current.index3];
+
+            if( drawable->colorOnFace )
+            {
+                buffer->DrawPhongTriangle(
+                                        renderable.points2D.data[current.index1],
+                                        renderable.points2D.data[current.index2],
+                                        renderable.points2D.data[current.index3],
+                                        drawable->pointColors.data[current.index1],
+                                        drawable->pointColors.data[current.index2],
+                                        drawable->pointColors.data[current.index3],
+                                        posi1, posi2, posi3,
+                                        effectiveDrawable->pointNormals.data[current.index1],
+                                        effectiveDrawable->pointNormals.data[current.index1],
+                                        effectiveDrawable->pointNormals.data[current.index1],
+                                        ambientLight, pointLight);
+            }
+            else
+            {
+                Color colorCurrent = drawable->faceColors.data[i];
+
+                buffer->DrawPhongTriangle(
+                                        renderable.points2D.data[current.index1],
+                                        renderable.points2D.data[current.index2],
+                                        renderable.points2D.data[current.index3],
+                                        colorCurrent,
+                                        colorCurrent,
+                                        colorCurrent,
+                                        posi1, posi2, posi3,
+                                        effectiveDrawable->pointNormals.data[current.index1],
+                                        effectiveDrawable->pointNormals.data[current.index1],
+                                        effectiveDrawable->pointNormals.data[current.index1],
+                                        ambientLight, pointLight);
+            }
+        }
+    }
 }
