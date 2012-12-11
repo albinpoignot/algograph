@@ -189,32 +189,54 @@ void Buffer::DrawPhongTriangle(const Coord2D p1, const Coord2D p2,
 	scanLineComputer.Init();
     scanLineComputer.Compute( p1, p2, p3 );
 
-    //Coord3D Nl, Nr, pl, pr, p, L, N;
-	//double L;
+    Color colorLeft, colorRight;
+    Coord3D current3D, leftPosi, rightPosi, normalLeft, normalRight;
 
     for( int i = scanLineComputer.ymin; i < scanLineComputer.ymax; ++i )
     {
-        // TODO Draw manually each points between
-        // Coord2D( scanLineComputer.left.data[i], i) and Coord2D( scanLineComputer.right.data[i], i )
-        // Process the right color for each point before drawing it
-        //     => ambiantLight + (dirFromCam . normVector) * diffuseLight
+        Coord2D pointLeft(scanLineComputer.left.data[i], i);
+        Coord2D pointRight(scanLineComputer.right.data[i], i);
+        double distance = pointLeft.Distance(pointRight);
 
-        // PointLigth possède une méthode GetColor... qui donne une couleur en fonction d'une normale
+        normalLeft = normal1 * scanLineComputer.leftweight.data[i].data[0] +
+                normal2 * scanLineComputer.leftweight.data[i].data[1] +
+                normal3 * scanLineComputer.leftweight.data[i].data[2];
 
-        //L = posi1*normal1 + posi2*normal2 + posi3*normal3; // Certainement faux
+        normalRight = normal1 * scanLineComputer.rightweight.data[i].data[0] +
+                normal2 * scanLineComputer.rightweight.data[i].data[1] +
+                normal3 * scanLineComputer.rightweight.data[i].data[2];
+
+        colorLeft = c1 * scanLineComputer.leftweight.data[i].data[0] +
+                c2 * scanLineComputer.leftweight.data[i].data[1] +
+                c3 * scanLineComputer.leftweight.data[i].data[2];
+
+        colorRight = c1 * scanLineComputer.rightweight.data[i].data[0] +
+                c2 * scanLineComputer.rightweight.data[i].data[1] +
+                c3 * scanLineComputer.rightweight.data[i].data[2];
+
+        leftPosi = posi1 * scanLineComputer.leftweight.data[i].data[0] +
+                posi2 * scanLineComputer.leftweight.data[i].data[1] +
+                posi3 * scanLineComputer.leftweight.data[i].data[2];
+
+        rightPosi = posi1 * scanLineComputer.rightweight.data[i].data[0] +
+                posi2 * scanLineComputer.rightweight.data[i].data[1] +
+                posi3 * scanLineComputer.rightweight.data[i].data[2];
 
         // Parcours de tous les points sur la ligne courante
 		for(int j = scanLineComputer.left.data[i]; j <= scanLineComputer.right.data[i]; ++j)
 		{
+		    Coord2D current2D(j, i);
+		    double w1 = 1.0 - (pointLeft.Distance(current2D) / distance);
+		    double w2 = 1.0 - w1;
 
-				// Couleur de la lumière reçue en ce point
-				/*receivedColor = ambientLight.ambientColor
-					+ L * pointLight->GetColor();*/
+		    Coord3D posiCurrent = leftPosi * w1 + rightPosi * w2;
+		    Coord3D normalCurrent = normalLeft * w1 + normalRight * w2;
 
-                /*this->SetPoint(
-					Coord2D(j, i, depthl * (1 - prop) + depthr * prop),
-					(couleurl * (1 - prop) + couleurr * prop) * receivedColor
-					);*/
+		    Color diffuseColor = pointLight.GetColor(posiCurrent, normalCurrent);
+		    Color pointColor = colorLeft * w1 + colorRight * w2;
+
+		    SetPoint(current2D, (ambientLight.ambientColor + diffuseColor) * pointColor);
+
         }
 
     }
