@@ -171,10 +171,12 @@ void Buffer::DrawFilledTriangle(const Coord2D p1, const Coord2D p2,
     scanLineComputer.Init();
     scanLineComputer.Compute( p1, p2, p3 );
 
+    // Dessin des contours
     DrawLine(p1, p2, c1, c2) ;
     DrawLine(p2, p3, c2, c3) ;
     DrawLine(p3, p1, c3, c1) ;
 
+    // Dessin de l'intérieur du triangle, ligne par ligne
     for( int i = scanLineComputer.ymin; i < scanLineComputer.ymax; ++i )
     {
         Color color1 = ( c1 * scanLineComputer.leftweight.data[i].data[0] ) + ( c2 * scanLineComputer.leftweight.data[i].data[1] ) + ( c3 * scanLineComputer.leftweight.data[i].data[2] );
@@ -196,6 +198,7 @@ void Buffer::DrawPhongTriangle(const Coord2D p1, const Coord2D p2,
     Color colorLeft, colorRight;
     Coord3D current3D, leftPosi, rightPosi, normalLeft, normalRight;
 
+    // Parcours de chaque ligne
     for( int i = scanLineComputer.ymin; i < scanLineComputer.ymax; ++i )
     {
         Coord2D pointLeft(scanLineComputer.left.data[i], i);
@@ -226,7 +229,7 @@ void Buffer::DrawPhongTriangle(const Coord2D p1, const Coord2D p2,
                 posi2 * scanLineComputer.rightweight.data[i].data[1] +
                 posi3 * scanLineComputer.rightweight.data[i].data[2];
 
-        // Parcours de tous les points sur la ligne courante
+        // Parcours et dessin de tous les points sur la ligne courante
 		for(int j = scanLineComputer.left.data[i]; j <= scanLineComputer.right.data[i]; ++j)
 		{
 		    Coord2D current2D(j, i);
