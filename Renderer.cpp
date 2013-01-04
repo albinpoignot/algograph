@@ -257,137 +257,131 @@ void Renderer::DrawFacePleine()
 
 void Renderer::DrawLambert()
 {
-	for( int i = 0; i < drawable->faces.size; ++i )
+	for( int i = 0; i < effectiveDrawable->sortedVisibleFaces.size; ++i )
     {
-        Face current = drawable->faces.data[i];
+        int j = effectiveDrawable->sortedVisibleFaces.data[i].index;
+        Face current = drawable->faces.data[j];
 
-        if( effectiveDrawable->faceVisibles.data[i] )
+        Coord3D p1 = effectiveDrawable->points.data[current.index1];
+        Coord3D p2 = effectiveDrawable->points.data[current.index2];
+        Coord3D p3 = effectiveDrawable->points.data[current.index3];
+
+        double baryCentreX = (p1.x + p2.x + p3.x) / 3;
+        double baryCentreY = (p1.y + p2.y + p3.y) / 3;
+        double baryCentreZ = (p1.z + p2.z + p3.z) / 3;
+
+        Color colorLight = pointLight.GetColor( Coord3D( baryCentreX, baryCentreY, baryCentreZ), effectiveDrawable->faceNormals.data[j] );
+        Color colorAmbient = ambientLight.ambientColor;
+        Color color = colorLight + colorAmbient;
+
+        if( drawable->colorOnFace )
         {
-            Coord3D p1 = effectiveDrawable->points.data[current.index1];
-            Coord3D p2 = effectiveDrawable->points.data[current.index2];
-            Coord3D p3 = effectiveDrawable->points.data[current.index3];
+            buffer->DrawFilledTriangle( renderable.points2D.data[current.index1],
+                                        renderable.points2D.data[current.index2],
+                                        renderable.points2D.data[current.index3],
+                                        drawable->pointColors.data[current.index1]*color,
+                                        drawable->pointColors.data[current.index2]*color,
+                                        drawable->pointColors.data[current.index3]*color );
+        }
+        else
+        {
+            Color colorCurrent = drawable->faceColors.data[j];
 
-            double baryCentreX = (p1.x + p2.x + p3.x) / 3;
-            double baryCentreY = (p1.y + p2.y + p3.y) / 3;
-            double baryCentreZ = (p1.z + p2.z + p3.z) / 3;
-
-            Color colorLight = pointLight.GetColor( Coord3D( baryCentreX, baryCentreY, baryCentreZ), effectiveDrawable->faceNormals.data[i] );
-            Color colorAmbient = ambientLight.ambientColor;
-            Color color = colorLight + colorAmbient;
-
-            if( drawable->colorOnFace )
-            {
-                buffer->DrawFilledTriangle( renderable.points2D.data[current.index1],
-                                            renderable.points2D.data[current.index2],
-                                            renderable.points2D.data[current.index3],
-                                            drawable->pointColors.data[current.index1]*color,
-                                            drawable->pointColors.data[current.index2]*color,
-                                            drawable->pointColors.data[current.index3]*color );
-            }
-            else
-            {
-                Color colorCurrent = drawable->faceColors.data[i];
-
-                buffer->DrawFilledTriangle( renderable.points2D.data[current.index1], renderable.points2D.data[current.index2], renderable.points2D.data[current.index3],
-                                            colorCurrent*color, colorCurrent*color, colorCurrent*color );
-            }
+            buffer->DrawFilledTriangle( renderable.points2D.data[current.index1], renderable.points2D.data[current.index2], renderable.points2D.data[current.index3],
+                                        colorCurrent*color, colorCurrent*color, colorCurrent*color );
         }
     }
 }
 
 void Renderer::DrawGouraud()
 {
-	for( int i = 0; i < drawable->faces.size; ++i )
+	for( int i = 0; i < effectiveDrawable->sortedVisibleFaces.size; ++i )
     {
-        Face current = drawable->faces.data[i];
+        int j = effectiveDrawable->sortedVisibleFaces.data[i].index;
+        Face current = drawable->faces.data[j];
 
-        if( effectiveDrawable->faceVisibles.data[i] )
+        // Récupère les coordonnées 3D des sommets
+        Coord3D p1 = effectiveDrawable->points.data[current.index1];
+        Coord3D p2 = effectiveDrawable->points.data[current.index2];
+        Coord3D p3 = effectiveDrawable->points.data[current.index3];
+
+        // Récupération des couleurs par rapport à la lumière
+        Color colorP1 = pointLight.GetColor( p1, effectiveDrawable->pointNormals.data[current.index1] );
+        Color colorP2 = pointLight.GetColor( p2, effectiveDrawable->pointNormals.data[current.index2] );
+        Color colorP3 = pointLight.GetColor( p3, effectiveDrawable->pointNormals.data[current.index3] );
+
+        // Ajout de ambient light
+        Color colorAmbient = ambientLight.ambientColor;
+        colorP1 = colorP1 + colorAmbient;
+        colorP2 = colorP2 + colorAmbient;
+        colorP3 = colorP3 + colorAmbient;
+
+        // Dessin
+        if( drawable->colorOnFace )
         {
-            // Récupère les coordonnées 3D des sommets
-            Coord3D p1 = effectiveDrawable->points.data[current.index1];
-            Coord3D p2 = effectiveDrawable->points.data[current.index2];
-            Coord3D p3 = effectiveDrawable->points.data[current.index3];
+            buffer->DrawFilledTriangle( renderable.points2D.data[current.index1],
+                                        renderable.points2D.data[current.index2],
+                                        renderable.points2D.data[current.index3],
+                                        drawable->pointColors.data[current.index1]*colorP1,
+                                        drawable->pointColors.data[current.index2]*colorP2,
+                                        drawable->pointColors.data[current.index3]*colorP3 );
+        }
+        else
+        {
+            Color colorCurrent = drawable->faceColors.data[j];
 
-            // Récupération des couleurs par rapport à la lumière
-            Color colorP1 = pointLight.GetColor( p1, effectiveDrawable->pointNormals.data[current.index1] );
-            Color colorP2 = pointLight.GetColor( p2, effectiveDrawable->pointNormals.data[current.index2] );
-            Color colorP3 = pointLight.GetColor( p3, effectiveDrawable->pointNormals.data[current.index3] );
-
-            // Ajout de ambient light
-            Color colorAmbient = ambientLight.ambientColor;
-            colorP1 = colorP1 + colorAmbient;
-            colorP2 = colorP2 + colorAmbient;
-            colorP3 = colorP3 + colorAmbient;
-
-            // Dessin
-            if( drawable->colorOnFace )
-            {
-                buffer->DrawFilledTriangle( renderable.points2D.data[current.index1],
-                                            renderable.points2D.data[current.index2],
-                                            renderable.points2D.data[current.index3],
-                                            drawable->pointColors.data[current.index1]*colorP1,
-                                            drawable->pointColors.data[current.index2]*colorP2,
-                                            drawable->pointColors.data[current.index3]*colorP3 );
-            }
-            else
-            {
-                Color colorCurrent = drawable->faceColors.data[i];
-
-                buffer->DrawFilledTriangle( renderable.points2D.data[current.index1],
-                                            renderable.points2D.data[current.index2],
-                                            renderable.points2D.data[current.index3],
-                                            colorCurrent*colorP1,
-                                            colorCurrent*colorP2,
-                                            colorCurrent*colorP3 );
-            }
+            buffer->DrawFilledTriangle( renderable.points2D.data[current.index1],
+                                        renderable.points2D.data[current.index2],
+                                        renderable.points2D.data[current.index3],
+                                        colorCurrent*colorP1,
+                                        colorCurrent*colorP2,
+                                        colorCurrent*colorP3 );
         }
     }
 }
 void Renderer::DrawPhong()
 {
-	for( int i = 0; i < drawable->faces.size; ++i )
+	for( int i = 0; i < effectiveDrawable->sortedVisibleFaces.size; ++i )
     {
-        Face current = drawable->faces.data[i];
+        int j = effectiveDrawable->sortedVisibleFaces.data[i].index;
+        Face current = drawable->faces.data[j];
 
-        if( effectiveDrawable->faceVisibles.data[i] )
+        // Récupération des Coord3D des points à dessiner
+        Coord3D posi1 = effectiveDrawable->points.data[current.index1];
+        Coord3D posi2 = effectiveDrawable->points.data[current.index2];
+        Coord3D posi3 = effectiveDrawable->points.data[current.index3];
+
+        if( drawable->colorOnFace )
         {
-            // Récupération des Coord3D des points à dessiner
-            Coord3D posi1 = effectiveDrawable->points.data[current.index1];
-            Coord3D posi2 = effectiveDrawable->points.data[current.index2];
-            Coord3D posi3 = effectiveDrawable->points.data[current.index3];
+            buffer->DrawPhongTriangle(
+                                    renderable.points2D.data[current.index1],
+                                    renderable.points2D.data[current.index2],
+                                    renderable.points2D.data[current.index3],
+                                    drawable->pointColors.data[current.index1],
+                                    drawable->pointColors.data[current.index2],
+                                    drawable->pointColors.data[current.index3],
+                                    posi1, posi2, posi3,
+                                    effectiveDrawable->pointNormals.data[current.index1],
+                                    effectiveDrawable->pointNormals.data[current.index2],
+                                    effectiveDrawable->pointNormals.data[current.index3],
+                                    ambientLight, pointLight);
+        }
+        else
+        {
+            Color colorCurrent = drawable->faceColors.data[j];
 
-            if( drawable->colorOnFace )
-            {
-                buffer->DrawPhongTriangle(
-                                        renderable.points2D.data[current.index1],
-                                        renderable.points2D.data[current.index2],
-                                        renderable.points2D.data[current.index3],
-                                        drawable->pointColors.data[current.index1],
-                                        drawable->pointColors.data[current.index2],
-                                        drawable->pointColors.data[current.index3],
-                                        posi1, posi2, posi3,
-                                        effectiveDrawable->pointNormals.data[current.index1],
-                                        effectiveDrawable->pointNormals.data[current.index2],
-                                        effectiveDrawable->pointNormals.data[current.index3],
-                                        ambientLight, pointLight);
-            }
-            else
-            {
-                Color colorCurrent = drawable->faceColors.data[i];
-
-                buffer->DrawPhongTriangle(
-                                        renderable.points2D.data[current.index1],
-                                        renderable.points2D.data[current.index2],
-                                        renderable.points2D.data[current.index3],
-                                        colorCurrent,
-                                        colorCurrent,
-                                        colorCurrent,
-                                        posi1, posi2, posi3,
-                                        effectiveDrawable->pointNormals.data[current.index1],
-                                        effectiveDrawable->pointNormals.data[current.index2],
-                                        effectiveDrawable->pointNormals.data[current.index3],
-                                        ambientLight, pointLight);
-            }
+            buffer->DrawPhongTriangle(
+                                    renderable.points2D.data[current.index1],
+                                    renderable.points2D.data[current.index2],
+                                    renderable.points2D.data[current.index3],
+                                    colorCurrent,
+                                    colorCurrent,
+                                    colorCurrent,
+                                    posi1, posi2, posi3,
+                                    effectiveDrawable->pointNormals.data[current.index1],
+                                    effectiveDrawable->pointNormals.data[current.index2],
+                                    effectiveDrawable->pointNormals.data[current.index3],
+                                    ambientLight, pointLight);
         }
     }
 }
