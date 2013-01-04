@@ -204,7 +204,7 @@ void Renderer::DrawFilaireCache()
         }
     }
 }
-void Renderer::DrawFacePleine()
+/*void Renderer::DrawFacePleine()
 {
 	for( int i = 0; i < drawable->faces.size; ++i )
     {
@@ -226,6 +226,34 @@ void Renderer::DrawFacePleine()
                                             color, color, color );
             }
         }
+    }
+}*/
+
+void Renderer::DrawFacePleine()
+{
+    //for( int i = 0; i < drawable->faces.size; ++i )
+    for( int i = 0; i < effectiveDrawable->sortedVisibleFaces.size; ++i )
+    {
+
+        //if( effectiveDrawable->faceVisibles.data[i] )
+        //{
+            int j = effectiveDrawable->sortedVisibleFaces.data[i].index;
+            Face current = drawable->faces.data[j];
+
+            if( drawable->colorOnFace )
+            {
+                buffer->DrawFilledTriangle( renderable.points2D.data[current.index1], renderable.points2D.data[current.index2], renderable.points2D.data[current.index3],
+                                            drawable->pointColors.data[current.index1], drawable->pointColors.data[current.index2], drawable->pointColors.data[current.index3] );
+
+            }
+            else
+            {
+                Color color = drawable->faceColors.data[i];
+
+                buffer->DrawFilledTriangle( renderable.points2D.data[current.index1], renderable.points2D.data[current.index2], renderable.points2D.data[current.index3],
+                                            color, color, color );
+            }
+        //}
     }
 }
 
