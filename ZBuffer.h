@@ -34,6 +34,14 @@ public:
 	void Init()
 	{
 		// completer ici : initialisation du buffer des profondeurs
+        for(int i = 0 ; i < depths.size ; i++ )
+        {
+            for(int j = 0 ; j < depths.data[i].size ; j++)
+            {
+                //depths.data[i].data[j] = 1000000000 ;
+                depths.data[i].data[j] = DBL_MAX ;
+            }
+        }
 	}
 	/** Permet d'activer la gestion du Z-buffer */
 	void Enable()
@@ -52,7 +60,25 @@ public:
 	{
 		// completer ici : retourne true si p doit remplacer le point de même coordonnées (p.x,p.y) selon les règles du Z-buffer
 		// par defaut, on remplace toujours
-		return true;
+		//return true;
+        if( enabled )
+        {
+            if( p.depth <= depths.data[p.y].data[p.x] ) // on remplace par le point p
+            {
+                depths.data[p.y].data[p.x] = p.depth ;
+                return true ;
+            }
+            else
+            {
+                depths.data[p.y].data[p.x] = p.depth ;
+                return false ;
+            }
+        }
+        else
+        {
+            return true ;
+        }
+
 	}
 };
 
