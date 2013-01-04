@@ -171,6 +171,10 @@ void Buffer::DrawFilledTriangle(const Coord2D p1, const Coord2D p2,
     scanLineComputer.Init();
     scanLineComputer.Compute( p1, p2, p3 );
 
+    DrawLine(p1, p2, c1, c2) ;
+    DrawLine(p2, p3, c2, c3) ;
+    DrawLine(p3, p1, c3, c1) ;
+
     for( int i = scanLineComputer.ymin; i < scanLineComputer.ymax; ++i )
     {
         Color color1 = ( c1 * scanLineComputer.leftweight.data[i].data[0] ) + ( c2 * scanLineComputer.leftweight.data[i].data[1] ) + ( c3 * scanLineComputer.leftweight.data[i].data[2] );
