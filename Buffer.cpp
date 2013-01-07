@@ -147,7 +147,6 @@ void Buffer::DrawLine(const Coord2D p1, const Coord2D p2, const Color c1,
 
             // Dessin
 	        SetPoint(coord, c1*w1 + c2*w2);
-	        //SetPoint(coord, c1*w1 + Color(255,0,0)*w2);
 
             // Incrémentation des coordonnées pour le prochain passage
 	        if(critere > 0)
