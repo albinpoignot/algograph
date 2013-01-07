@@ -33,12 +33,10 @@ public:
 	/** Initialise le Z-Buffer (les pixels sont à une profondeur infinie initialement) */
 	void Init()
 	{
-		// completer ici : initialisation du buffer des profondeurs
-        for(int i = 0 ; i < depths.size ; i++ )
+        for(int i = 0 ; i < depths.size ; ++i )
         {
-            for(int j = 0 ; j < depths.data[i].size ; j++)
+            for(int j = 0 ; j < depths.data[i].size ; ++j)
             {
-                //depths.data[i].data[j] = 1000000000 ;
                 depths.data[i].data[j] = DBL_MAX ;
             }
         }
@@ -58,12 +56,9 @@ public:
 	 * i.e. si p est plus proche de la caméra que le même pixel mais de profondeur depths[x][y]. */
 	inline bool ReplaceCurrent(const Coord2D p)
 	{
-		// completer ici : retourne true si p doit remplacer le point de même coordonnées (p.x,p.y) selon les règles du Z-buffer
-		// par defaut, on remplace toujours
-		//return true;
         if( enabled )
         {
-            if( p.depth <= depths.data[p.y].data[p.x] ) // on remplace par le point p
+            if( p.depth <= depths.data[p.y].data[p.x] )
             {
                 depths.data[p.y].data[p.x] = p.depth ;
                 return true ;
