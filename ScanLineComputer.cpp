@@ -148,36 +148,39 @@ void ScanLineComputer::AddEdge(const Coord2D p1, const Coord2D p2,
 void ScanLineComputer::AddPoint(const int x, const int y, const Coord2D p1,
 																const Coord2D p2, const int index1, const int index2)
 {
-	// y est la ligne
-	// si le point est plus à gauche que celui que l'on connait pour la ligne y
-	if (x <= left.data[y])
-	{
-		left.data[y] = x; // on remplace la limite gauche
-		leftweight.data[y].data[0] = 0; // on fixe initialement les poids à 0
-		leftweight.data[y].data[1] = 0; // on fixe initialement les poids à 0
-		leftweight.data[y].data[2] = 0; // on fixe initialement les poids à 0
+    if(y >= 0 && y < height)
+    {
+        // y est la ligne
+        // si le point est plus à gauche que celui que l'on connait pour la ligne y
+        if (x <= left.data[y])
+        {
+            left.data[y] = x; // on remplace la limite gauche
+            leftweight.data[y].data[0] = 0; // on fixe initialement les poids à 0
+            leftweight.data[y].data[1] = 0; // on fixe initialement les poids à 0
+            leftweight.data[y].data[2] = 0; // on fixe initialement les poids à 0
 
-		// On calcule les poids associés à ce nouveau point de manière à ce que (x,y)=w1*p1+w2*p2
-		leftweight.data[y].data[index1] = 1 - p1.Distance(Coord2D(x, y))
-																			/ p1.Distance(p2);
-		leftweight.data[y].data[index2] = 1 - leftweight.data[y].data[index1];
-	}
-	// si le point est plus à droite que celui que l'on connait pour la ligne y
-	if (x >= right.data[y])
-	{
-		right.data[y] = x; // on remplace la limite droite
-		rightweight.data[y].data[0] = 0; // on fixe initialement les poids à 0
-		rightweight.data[y].data[1] = 0; // on fixe initialement les poids à 0
-		rightweight.data[y].data[2] = 0; // on fixe initialement les poids à 0
+            // On calcule les poids associés à ce nouveau point de manière à ce que (x,y)=w1*p1+w2*p2
+            leftweight.data[y].data[index1] = 1 - p1.Distance(Coord2D(x, y))
+                                                                                / p1.Distance(p2);
+            leftweight.data[y].data[index2] = 1 - leftweight.data[y].data[index1];
+        }
+        // si le point est plus à droite que celui que l'on connait pour la ligne y
+        if (x >= right.data[y])
+        {
+            right.data[y] = x; // on remplace la limite droite
+            rightweight.data[y].data[0] = 0; // on fixe initialement les poids à 0
+            rightweight.data[y].data[1] = 0; // on fixe initialement les poids à 0
+            rightweight.data[y].data[2] = 0; // on fixe initialement les poids à 0
 
-		// On calcule les poids associés à ce nouveau point de manière à ce que (x,y)=w1*p1+w2*p2
-		rightweight.data[y].data[index1] = 1 - p1.Distance(Coord2D(x, y))
-																			 / p1.Distance(p2);
-		rightweight.data[y].data[index2] = 1 - rightweight.data[y].data[index1];
-	}
-	// on met a jours les limites haut/bas
-	if (y < ymin)
-		ymin = y;
-	if (y > ymax)
-		ymax = y;
+            // On calcule les poids associés à ce nouveau point de manière à ce que (x,y)=w1*p1+w2*p2
+            rightweight.data[y].data[index1] = 1 - p1.Distance(Coord2D(x, y))
+                                                                                 / p1.Distance(p2);
+            rightweight.data[y].data[index2] = 1 - rightweight.data[y].data[index1];
+        }
+        // on met a jours les limites haut/bas
+        if (y < ymin)
+            ymin = y;
+        if (y > ymax)
+            ymax = y;
+    }
 }
